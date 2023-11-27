@@ -1,12 +1,9 @@
 import { alphabet } from "@/alphabet";
 import { notFound } from "next/navigation";
 import LetterInfo from "./LetterInfo";
+import Head from "next/head";
 
-export default function Page({
-  params: { letterId },
-}: {
-  params: { letterId: string };
-}) {
+function ensureIndex(letterId: string) {
   const letterIdNumber = Number(letterId);
   if (isNaN(letterIdNumber)) {
     notFound();
@@ -17,18 +14,32 @@ export default function Page({
     notFound();
   }
 
+  return letterIndex;
+}
+
+export default function Page({
+  params: { letterId },
+}: {
+  params: { letterId: string };
+}) {
+  const letterIndex = ensureIndex(letterId);
   const letterData = alphabet[letterIndex];
 
   return (
-    <LetterInfo
-      letter={letterData.letter}
-      fullName={letterData.fullName}
-      vowelMark={letterData.vowelMark}
-      pronunciation={letterData.pronunciation}
-      pronunciationFile={letterData.pronunciationFile}
-      type={letterData.type}
-      notes={letterData.notes}
-    />
+    <>
+      <Head>
+        <title>{letterData.letter}</title>
+      </Head>
+      <LetterInfo
+        letter={letterData.letter}
+        fullName={letterData.fullName}
+        vowelMark={letterData.vowelMark}
+        pronunciation={letterData.pronunciation}
+        pronunciationFile={letterData.pronunciationFile}
+        type={letterData.type}
+        notes={letterData.notes}
+      />
+    </>
   );
 }
 
@@ -39,4 +50,17 @@ export function generateStaticParams() {
   }
 
   return pages;
+}
+
+export function generateMetadata({
+  params: { letterId },
+}: {
+  params: { letterId: string };
+}) {
+  const letterIndex = ensureIndex(letterId);
+  const letterData = alphabet[letterIndex];
+
+  return {
+    title: `${letterData.letter} - Bangla Journey`,
+  };
 }

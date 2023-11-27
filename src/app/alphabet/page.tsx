@@ -1,24 +1,11 @@
-"use client";
-
 import { Flex, Title, useComputedColorScheme } from "@mantine/core";
-import AlphabetEntry, { AlphabetEntryProps } from "./AlphabetEntry";
 import { consonants, vowels } from "@/alphabet";
+import { Metadata } from "next";
+import AlphabetCell from "./AlphabetCell";
 
-type AlphabetCellProps = AlphabetEntryProps;
-
-function AlphabetCell(props: AlphabetCellProps) {
-  const colorScheme = useComputedColorScheme("dark");
-
-  return (
-    <td
-      className={`p-2 border border-solid border-${
-        colorScheme === "dark" ? "white" : "black"
-      } text-center`}
-    >
-      <AlphabetEntry {...props} />
-    </td>
-  );
-}
+export const metadata: Metadata = {
+  title: "Alphabet - Bengali Journey",
+};
 
 export default function Page() {
   return (
