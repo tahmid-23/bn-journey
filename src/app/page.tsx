@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div>
-      <Text>Welcome to Bengali journey.</Text>
-      <Text>
+      <Text size="xl">Welcome to Bengali Journey.</Text>
+      <Text size="xl">
         Check out the <Link href="/alphabet">alphabet</Link>.
       </Text>
     </div>

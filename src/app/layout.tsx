@@ -18,13 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <ColorSchemeScript defaultColorScheme="auto" />
+        <ColorSchemeScript defaultColorScheme="dark" />
       </head>
       <body>
-        <MantineProvider theme={theme} defaultColorScheme="auto">
-          <div>
+        <MantineProvider theme={theme} defaultColorScheme="dark">
+          <div className="min-w-fit">
             <NavBar />
-            <main className="px-20 py-12 grow">{children}</main>
+            <main className="min-w-fit px-20 py-12 grow">{children}</main>
           </div>
         </MantineProvider>
       </body>

@@ -1,12 +1,20 @@
-import { SimpleGrid, Title } from "@mantine/core";
+"use client";
+
+import { Flex, Title, useComputedColorScheme } from "@mantine/core";
 import AlphabetEntry, { AlphabetEntryProps } from "./AlphabetEntry";
 import { consonants, vowels } from "@/alphabet";
 
 type AlphabetCellProps = AlphabetEntryProps;
 
 function AlphabetCell(props: AlphabetCellProps) {
+  const colorScheme = useComputedColorScheme("dark");
+
   return (
-    <td className="p-2 border border-solid border-white text-center">
+    <td
+      className={`p-2 border border-solid border-${
+        colorScheme === "dark" ? "white" : "black"
+      } text-center`}
+    >
       <AlphabetEntry {...props} />
     </td>
   );
@@ -14,8 +22,8 @@ function AlphabetCell(props: AlphabetCellProps) {
 
 export default function Page() {
   return (
-    <SimpleGrid cols={2}>
-      <div>
+    <Flex className="min-w-fit" wrap="wrap" gap="md">
+      <div className="flex-1">
         <Title order={3}>Vowels: </Title>
         <table className="border-collapse">
           <tbody>
@@ -37,7 +45,7 @@ export default function Page() {
           </tbody>
         </table>
       </div>
-      <div>
+      <div className="flex-1">
         <Title order={3}>Consonants: </Title>
         <table className="border-collapse">
           <tbody>
@@ -59,6 +67,6 @@ export default function Page() {
           </tbody>
         </table>
       </div>
-    </SimpleGrid>
+    </Flex>
   );
 }

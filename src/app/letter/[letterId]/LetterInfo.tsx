@@ -1,5 +1,6 @@
 import BNText from "@/components/BNText";
 import { Button, Paper, Stack, Text } from "@mantine/core";
+import { IconArrowLeft } from "@tabler/icons-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -51,7 +52,9 @@ export default function LetterInfo({
         </Stack>
       </Paper>
       <Link className="text-inherit no-underline" href="/alphabet">
-        <Button className="w-fit">Back to Alphabet</Button>
+        <Button className="w-fit" leftSection={<IconArrowLeft />}>
+          Back to Alphabet
+        </Button>
       </Link>
     </Stack>
   );

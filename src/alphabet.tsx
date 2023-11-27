@@ -277,6 +277,14 @@ export const consonants: LetterData[][] = [
       pronunciation: "ŋɔ",
       pronunciationFile: "/audio/letter/16.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>This letter cannot be at the beginning of a word.</Text>
+          <Text>
+            It has the same sound as the &quot;ng&quot; in &quot;sing&quot;.
+          </Text>
+        </>
+      ),
     },
   ],
   [
@@ -307,6 +315,24 @@ export const consonants: LetterData[][] = [
       pronunciation: "dʒɔ",
       pronunciationFile: "/audio/letter/19.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>
+            This letter sounds the same as{" "}
+            <Link href="/letter/37">
+              <BNText>য</BNText>
+            </Link>
+            .
+          </Text>
+          <Text>
+            Go to{" "}
+            <Link href="/letter/37">
+              <BNText>য</BNText>
+            </Link>{" "}
+            for more information.
+          </Text>
+        </>
+      ),
     },
     {
       pageNumber: 20,
@@ -320,9 +346,21 @@ export const consonants: LetterData[][] = [
       pageNumber: 21,
       letter: "ঞ",
       fullName: <BNText>ঞ</BNText>,
-      pronunciation: "nɔ",
+      pronunciation: "ẽɔ or nɔ (consonant conjunct)",
       pronunciationFile: "/audio/letter/21.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>This letter cannot be at the beginning of a word.</Text>
+          <Text>
+            In a consonant conjunct, it makes the same sound as{" "}
+            <Link href="/letter/31">
+              <BNText>ন</BNText>
+            </Link>
+            .
+          </Text>
+        </>
+      ),
     },
   ],
   [
@@ -425,6 +463,17 @@ export const consonants: LetterData[][] = [
       pronunciation: "nɔ",
       pronunciationFile: "/audio/letter/26.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>
+            Usually sounds the same as{" "}
+            <Link href="/letter/31">
+              <BNText>ন</BNText>
+            </Link>
+            .
+          </Text>
+        </>
+      ),
     },
   ],
   [
@@ -527,6 +576,17 @@ export const consonants: LetterData[][] = [
       pronunciation: "nɔ",
       pronunciationFile: "/audio/letter/31.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>
+            Usually sounds the same as{" "}
+            <Link href="/letter/26">
+              <BNText>ণ</BNText>
+            </Link>
+            .
+          </Text>
+        </>
+      ),
     },
   ],
   [
@@ -558,9 +618,12 @@ export const consonants: LetterData[][] = [
       pageNumber: 35,
       letter: "ভ",
       fullName: <BNText>ভ</BNText>,
-      pronunciation: "bʱɔ",
+      pronunciation: "bʱɔ or βɔ or vɔ",
       pronunciationFile: "/audio/letter/35.mp3",
       type: "Consonant",
+      notes: (
+        <Text>The pronunciation of this consonant is region-dependent.</Text>
+      ),
     },
     {
       pageNumber: 36,
@@ -583,6 +646,31 @@ export const consonants: LetterData[][] = [
       pronunciation: "dʒɔ",
       pronunciationFile: "/audio/letter/37.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>
+            This letter sounds the same as{" "}
+            <Link href="/letter/37">
+              <BNText>জ</BNText>
+            </Link>
+            .
+          </Text>
+          <Text>
+            In almost all cases, this letter appears at the beginning of a word.
+          </Text>
+          <Text>
+            Originally, this letter would make a &quot;y&quot; sound when in the
+            middle or at the end of a word.
+          </Text>
+          <Text>
+            The letter{" "}
+            <Link href="/letter/46">
+              <BNText>য়</BNText>
+            </Link>{" "}
+            now serves this purpose.
+          </Text>
+        </>
+      ),
     },
     {
       pageNumber: 38,
@@ -605,32 +693,89 @@ export const consonants: LetterData[][] = [
     {
       pageNumber: 40,
       letter: "শ",
-      fullName: <BNText>শ</BNText>,
+      fullName: (
+        <>
+          <BNText>তালব্য শ</BNText> (talôbyô shô)
+        </>
+      ),
       pronunciation: "ʃɔ",
       pronunciationFile: "/audio/letter/40.mp3",
       type: "Consonant",
+      notes: (
+        <Text>
+          This letter usually sounds the same as{" "}
+          <Link href="/letter/41">
+            <BNText>ষ</BNText>
+          </Link>{" "}
+          or{" "}
+          <Link href="/letter/42">
+            <BNText>স</BNText>
+          </Link>
+          .
+        </Text>
+      ),
     },
     {
       pageNumber: 41,
       letter: "ষ",
-      fullName: <BNText>ষ</BNText>,
-      pronunciation: "ɕɔ",
+      fullName: (
+        <>
+          <BNText>মূর্ধন্য ষ</BNText> (murdhônyô shô)
+        </>
+      ),
+      pronunciation: "ʃɔ",
       pronunciationFile: "/audio/letter/41.mp3",
       type: "Consonant",
+      notes: (
+        <Text>
+          This letter usually sounds the same as{" "}
+          <Link href="/letter/40">
+            <BNText>শ</BNText>
+          </Link>{" "}
+          or{" "}
+          <Link href="/letter/42">
+            <BNText>স</BNText>
+          </Link>
+          .
+        </Text>
+      ),
     },
     {
       pageNumber: 42,
       letter: "স",
-      fullName: <BNText>স</BNText>,
-      pronunciation: "sɔ",
+      fullName: (
+        <>
+          <BNText>দন্ত্য স</BNText> (dôntyô sô)
+        </>
+      ),
+      pronunciation: "ʃɔ or sɔ (Sanskrit origin or English loanword)",
       pronunciationFile: "/audio/letter/42.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>
+            This letter usually sounds the same as{" "}
+            <Link href="/letter/40">
+              <BNText>শ</BNText>
+            </Link>{" "}
+            or{" "}
+            <Link href="/letter/41">
+              <BNText>ষ</BNText>
+            </Link>
+            .
+          </Text>
+          <Text>
+            English loanwords with &quot;s&quot; use this letter and are
+            pronounced with an s.
+          </Text>
+        </>
+      ),
     },
     {
       pageNumber: 43,
       letter: "হ",
       fullName: <BNText>হ</BNText>,
-      pronunciation: "ɦɔ",
+      pronunciation: "hɔ (beginning or end) or ɦɔ (middle)",
       pronunciationFile: "/audio/letter/43.mp3",
       type: "Consonant",
     },
@@ -643,6 +788,21 @@ export const consonants: LetterData[][] = [
       pronunciation: "ɽɔ",
       pronunciationFile: "/audio/letter/44.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>
+            This letter sounds similar to{" "}
+            <Link href="/letter/38">
+              <BNText>র</BNText>
+            </Link>
+            .
+          </Text>
+          <Text>
+            Pronounce this letter by pressing your tongue to the roof of your
+            mouth.
+          </Text>
+        </>
+      ),
     },
     {
       pageNumber: 45,
@@ -651,6 +811,12 @@ export const consonants: LetterData[][] = [
       pronunciation: "ɽʱɔ",
       pronunciationFile: "/audio/letter/45.mp3",
       type: "Consonant",
+      notes: (
+        <Text>
+          Pronounce this letter by pressing your tongue to the roof of your
+          mouth.
+        </Text>
+      ),
     },
     {
       pageNumber: 46,
@@ -659,6 +825,13 @@ export const consonants: LetterData[][] = [
       pronunciation: "e̯ɔ",
       pronunciationFile: "/audio/letter/46.mp3",
       type: "Consonant",
+      notes: (
+        <>
+          <Text>This letter cannot appear at the beginning of a word.</Text>
+          <Text>As such, the audio clip for this word is incorrect.</Text>
+          <Text>It makes the same &quot;y&quot; sound as in English.</Text>
+        </>
+      ),
     },
   ],
 ];
