@@ -68,7 +68,7 @@ export const vowels: LetterData[][] = [
         <>
           <Text>
             This has the same pronunciation as the letter{" "}
-            <Link href="/letter/4">
+            <Link href="/alphabet/letter/4">
               <BNText>ঈ</BNText>
             </Link>
             .
@@ -100,7 +100,7 @@ export const vowels: LetterData[][] = [
         <>
           <Text>
             This has the same pronunciation as the letter{" "}
-            <Link href="/letter/3">
+            <Link href="/alphabet/letter/3">
               <BNText>ই</BNText>
             </Link>
             .
@@ -132,7 +132,7 @@ export const vowels: LetterData[][] = [
         <>
           <Text>
             This has the same pronunciation as the letter{" "}
-            <Link href="/letter/6">
+            <Link href="/alphabet/letter/6">
               <BNText>ঊ</BNText>
             </Link>
             .
@@ -164,7 +164,7 @@ export const vowels: LetterData[][] = [
         <>
           <Text>
             This has the same pronunciation as the letter{" "}
-            <Link href="/letter/5">
+            <Link href="/alphabet/letter/5">
               <BNText>উ</BNText>
             </Link>
             .
@@ -319,14 +319,14 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds the same as{" "}
-            <Link href="/letter/37">
+            <Link href="/alphabet/letter/37">
               <BNText>য</BNText>
             </Link>
             .
           </Text>
           <Text>
             Go to{" "}
-            <Link href="/letter/37">
+            <Link href="/alphabet/letter/37">
               <BNText>য</BNText>
             </Link>{" "}
             for more information.
@@ -354,7 +354,7 @@ export const consonants: LetterData[][] = [
           <Text>This letter cannot be at the beginning of a word.</Text>
           <Text>
             In a consonant conjunct, it makes the same sound as{" "}
-            <Link href="/letter/31">
+            <Link href="/alphabet/letter/31">
               <BNText>ন</BNText>
             </Link>
             .
@@ -375,7 +375,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/27">
+            <Link href="/alphabet/letter/27">
               <BNText>ত</BNText>
             </Link>
             .
@@ -398,7 +398,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/28">
+            <Link href="/alphabet/letter/28">
               <BNText>থ</BNText>
             </Link>
             .
@@ -421,7 +421,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/29">
+            <Link href="/alphabet/letter/29">
               <BNText>দ</BNText>
             </Link>
             .
@@ -444,7 +444,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/30">
+            <Link href="/alphabet/letter/30">
               <BNText>ধ</BNText>
             </Link>
             .
@@ -471,7 +471,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             Usually sounds the same as{" "}
-            <Link href="/letter/31">
+            <Link href="/alphabet/letter/31">
               <BNText>ন</BNText>
             </Link>
             .
@@ -492,7 +492,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/22">
+            <Link href="/alphabet/letter/22">
               <BNText>ট</BNText>
             </Link>
             .
@@ -515,7 +515,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/23">
+            <Link href="/alphabet/letter/23">
               <BNText>ঠ</BNText>
             </Link>
             .
@@ -538,7 +538,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/24">
+            <Link href="/alphabet/letter/24">
               <BNText>ড</BNText>
             </Link>
             .
@@ -561,7 +561,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/25">
+            <Link href="/alphabet/letter/25">
               <BNText>ঢ</BNText>
             </Link>
             .
@@ -588,7 +588,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             Usually sounds the same as{" "}
-            <Link href="/letter/26">
+            <Link href="/alphabet/letter/26">
               <BNText>ণ</BNText>
             </Link>
             .
@@ -658,7 +658,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds the same as{" "}
-            <Link href="/letter/37">
+            <Link href="/alphabet/letter/37">
               <BNText>জ</BNText>
             </Link>
             .
@@ -672,7 +672,7 @@ export const consonants: LetterData[][] = [
           </Text>
           <Text>
             The letter{" "}
-            <Link href="/letter/46">
+            <Link href="/alphabet/letter/46">
               <BNText>য়</BNText>
             </Link>{" "}
             now serves this purpose.
@@ -712,11 +712,11 @@ export const consonants: LetterData[][] = [
       notes: (
         <Text>
           This letter usually sounds the same as{" "}
-          <Link href="/letter/41">
+          <Link href="/alphabet/letter/41">
             <BNText>ষ</BNText>
           </Link>{" "}
           or{" "}
-          <Link href="/letter/42">
+          <Link href="/alphabet/letter/42">
             <BNText>স</BNText>
           </Link>
           .
@@ -737,11 +737,11 @@ export const consonants: LetterData[][] = [
       notes: (
         <Text>
           This letter usually sounds the same as{" "}
-          <Link href="/letter/40">
+          <Link href="/alphabet/letter/40">
             <BNText>শ</BNText>
           </Link>{" "}
           or{" "}
-          <Link href="/letter/42">
+          <Link href="/alphabet/letter/42">
             <BNText>স</BNText>
           </Link>
           .
@@ -763,11 +763,11 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter usually sounds the same as{" "}
-            <Link href="/letter/40">
+            <Link href="/alphabet/letter/40">
               <BNText>শ</BNText>
             </Link>{" "}
             or{" "}
-            <Link href="/letter/41">
+            <Link href="/alphabet/letter/41">
               <BNText>ষ</BNText>
             </Link>
             .
@@ -800,7 +800,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds similar to{" "}
-            <Link href="/letter/38">
+            <Link href="/alphabet/letter/38">
               <BNText>র</BNText>
             </Link>
             .

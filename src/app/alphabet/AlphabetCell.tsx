@@ -1,11 +1,18 @@
 "use client";
 
-import { useComputedColorScheme } from "@mantine/core";
-import AlphabetEntry, { AlphabetEntryProps } from "./AlphabetEntry";
+import BNText from "@/components/BNText";
+import { Text, useComputedColorScheme } from "@mantine/core";
+import Link from "next/link";
 
-export type AlphabetCellProps = AlphabetEntryProps;
+export interface AlphabetCellProps {
+  letter: string;
+  pageNumber: number;
+}
 
-export default function AlphabetCell(props: AlphabetCellProps) {
+export default function AlphabetCell({
+  letter,
+  pageNumber,
+}: AlphabetCellProps) {
   const colorScheme = useComputedColorScheme("dark");
 
   return (
@@ -14,7 +21,14 @@ export default function AlphabetCell(props: AlphabetCellProps) {
         colorScheme === "dark" ? "white" : "black"
       } text-center`}
     >
-      <AlphabetEntry {...props} />
+      <Text className="text-6xl">
+        <Link
+          className="text-inherit no-underline"
+          href={`/alphabet/letter/${pageNumber}`}
+        >
+          <BNText>{letter}</BNText>
+        </Link>
+      </Text>
     </td>
   );
 }

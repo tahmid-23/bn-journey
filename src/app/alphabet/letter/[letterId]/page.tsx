@@ -1,6 +1,7 @@
 import { alphabet } from "@/alphabet";
 import { notFound } from "next/navigation";
-import LetterInfo from "./LetterInfo";
+import LetterInfo from "../../../../components/letter/LetterInfo";
+import AlphabetChildPageWrapper from "../../AlphabetChildPageWrapper";
 
 function ensureIndex(letterId: string) {
   const letterIdNumber = Number(letterId);
@@ -16,6 +17,8 @@ function ensureIndex(letterId: string) {
   return letterIndex;
 }
 
+export const dynamicParams = false;
+
 export default function Page({
   params: { letterId },
 }: {
@@ -25,15 +28,9 @@ export default function Page({
   const letterData = alphabet[letterIndex];
 
   return (
-    <LetterInfo
-      letter={letterData.letter}
-      fullName={letterData.fullName}
-      vowelMark={letterData.vowelMark}
-      pronunciation={letterData.pronunciation}
-      pronunciationFile={letterData.pronunciationFile}
-      type={letterData.type}
-      notes={letterData.notes}
-    />
+    <AlphabetChildPageWrapper>
+      <LetterInfo letterData={letterData} />
+    </AlphabetChildPageWrapper>
   );
 }
 
