@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "@mantine/core/styles.css";
 import "./globals.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import NavBar from "@/components/NavBar";
+import { theme } from "@/theme";
 
 export const metadata: Metadata = {
   title: "Bengali Journey",
@@ -19,7 +21,12 @@ export default function RootLayout({
         <ColorSchemeScript defaultColorScheme="auto" />
       </head>
       <body>
-        <MantineProvider defaultColorScheme="auto">{children}</MantineProvider>
+        <MantineProvider theme={theme} defaultColorScheme="auto">
+          <div>
+            <NavBar />
+            <main className="px-20 py-12 grow">{children}</main>
+          </div>
+        </MantineProvider>
       </body>
     </html>
   );
