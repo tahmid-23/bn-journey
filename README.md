@@ -1,5 +1,5 @@
 # bn-journey
-This is a website with useful resources to help learn Bengali.
+This is a website with useful resources to help learn Bengali. Check it out at https://bn-journey.vercel.app/.
 
 Built with [Next.js](https://github.com/vercel/next.js).
 

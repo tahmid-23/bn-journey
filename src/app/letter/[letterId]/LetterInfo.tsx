@@ -1,48 +1,51 @@
 import BNText from "@/components/BNText";
 import { Button, Paper, Stack, Text } from "@mantine/core";
 import Link from "next/link";
-import { PropsWithChildren, ReactNode } from "react";
+import { ReactNode } from "react";
 
 export interface LetterInfoProps {
   letter: string;
   fullName: ReactNode;
-  vowelMark: string;
-  pronunciation: string;
+  vowelMark?: string;
+  pronunciation: ReactNode;
   pronunciationFile: string;
   type: string;
+  notes?: ReactNode;
 }
 
 export default function LetterInfo({
-  letter: letterName,
+  letter,
   fullName,
   vowelMark,
   pronunciation,
   pronunciationFile,
   type,
-  children,
-}: PropsWithChildren<LetterInfoProps>) {
+  notes,
+}: LetterInfoProps) {
   return (
     <Stack>
       <Paper className="w-fit" p="md" withBorder>
         <Stack>
           <div>
             <Text className="text-8xl">
-              <BNText>{letterName}</BNText>
+              <BNText>{letter}</BNText>
             </Text>
             <Text>Full name: {fullName}</Text>
-            <Text>
-              Vowel mark: <BNText>{vowelMark}</BNText>
-            </Text>
+            {vowelMark && (
+              <Text>
+                Vowel mark: <BNText>{vowelMark}</BNText>
+              </Text>
+            )}
             <Text>Pronunciation: {pronunciation}</Text>
             <audio controls>
               <source src={pronunciationFile} type="audio/mpeg" />
             </audio>
             <Text>Type: {type}</Text>
           </div>
-          {children && (
+          {notes && (
             <div>
               <Text size="lg">Notes:</Text>
-              {children}
+              {notes}
             </div>
           )}
         </Stack>
