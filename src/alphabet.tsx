@@ -459,7 +459,11 @@ export const consonants: LetterData[][] = [
     {
       pageNumber: 26,
       letter: "ণ",
-      fullName: <BNText>ণ</BNText>,
+      fullName: (
+        <>
+          <BNText>মূর্ধন্য ণ</BNText> (murdhônyô nô)
+        </>
+      ),
       pronunciation: "nɔ",
       pronunciationFile: "/audio/letter/26.mp3",
       type: "Consonant",
@@ -572,7 +576,11 @@ export const consonants: LetterData[][] = [
     {
       pageNumber: 31,
       letter: "ন",
-      fullName: <BNText>ন</BNText>,
+      fullName: (
+        <>
+          <BNText>দন্ত্য ন</BNText> (dôntyô nô)
+        </>
+      ),
       pronunciation: "nɔ",
       pronunciationFile: "/audio/letter/31.mp3",
       type: "Consonant",
