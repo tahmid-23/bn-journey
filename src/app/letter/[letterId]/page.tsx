@@ -1,7 +1,6 @@
 import { alphabet } from "@/alphabet";
 import { notFound } from "next/navigation";
 import LetterInfo from "./LetterInfo";
-import Head from "next/head";
 
 function ensureIndex(letterId: string) {
   const letterIdNumber = Number(letterId);
@@ -26,20 +25,15 @@ export default function Page({
   const letterData = alphabet[letterIndex];
 
   return (
-    <>
-      <Head>
-        <title>{letterData.letter}</title>
-      </Head>
-      <LetterInfo
-        letter={letterData.letter}
-        fullName={letterData.fullName}
-        vowelMark={letterData.vowelMark}
-        pronunciation={letterData.pronunciation}
-        pronunciationFile={letterData.pronunciationFile}
-        type={letterData.type}
-        notes={letterData.notes}
-      />
-    </>
+    <LetterInfo
+      letter={letterData.letter}
+      fullName={letterData.fullName}
+      vowelMark={letterData.vowelMark}
+      pronunciation={letterData.pronunciation}
+      pronunciationFile={letterData.pronunciationFile}
+      type={letterData.type}
+      notes={letterData.notes}
+    />
   );
 }
 

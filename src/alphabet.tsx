@@ -150,7 +150,7 @@ export const vowels: LetterData[][] = [
     },
     {
       pageNumber: 6,
-      letter: "উ",
+      letter: "ঊ",
       fullName: (
         <>
           <BNText>দীর্ঘ উ</BNText> (dirghô ū)
