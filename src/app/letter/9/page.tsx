@@ -12,6 +12,7 @@ export default function Page() {
       }
       vowelMark="ৈ"
       pronunciation="oi"
+      pronunciationFile="/audio/letter/9.mp3"
       type="Vowel"
     />
   );

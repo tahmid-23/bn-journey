@@ -13,6 +13,7 @@ export default function Page() {
       }
       vowelMark="ৃ"
       pronunciation="ri"
+      pronunciationFile="/audio/letter/7.mp3"
       type="Vowel"
     >
       <Text>

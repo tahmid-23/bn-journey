@@ -12,6 +12,7 @@ export default function Page() {
       }
       vowelMark="া"
       pronunciation="a"
+      pronunciationFile="/audio/letter/2.mp3"
       type="Vowel"
     />
   );

@@ -12,6 +12,7 @@ export default function Page() {
       }
       vowelMark="ো"
       pronunciation="o"
+      pronunciationFile="/audio/letter/10.mp3"
       type="Vowel"
     />
   );

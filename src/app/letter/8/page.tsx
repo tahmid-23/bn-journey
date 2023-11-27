@@ -12,6 +12,7 @@ export default function Page() {
       }
       vowelMark="ে"
       pronunciation="e, æ, or ɛ"
+      pronunciationFile="/audio/letter/8.mp3"
       type="Vowel"
     />
   );

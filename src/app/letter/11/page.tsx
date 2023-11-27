@@ -12,6 +12,7 @@ export default function Page() {
       }
       vowelMark="ৌ"
       pronunciation="ou"
+      pronunciationFile="/audio/letter/11.mp3"
       type="Vowel"
     />
   );

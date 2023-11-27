@@ -13,6 +13,7 @@ export default function Page() {
       }
       vowelMark="N/A"
       pronunciation="ɔ"
+      pronunciationFile="/audio/letter/1.mp3"
       type="Vowel"
     >
       <Text>This vowel is the &quot;default&quot; vowel sound in Bengali.</Text>

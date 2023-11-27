@@ -14,6 +14,7 @@ export default function Page() {
       }
       vowelMark="ি"
       pronunciation="i"
+      pronunciationFile="/audio/letter/3.mp3"
       type="Vowel"
     >
       <Text>

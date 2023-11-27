@@ -14,6 +14,7 @@ export default function Page() {
       }
       vowelMark="ু"
       pronunciation="u"
+      pronunciationFile="/audio/letter/5.mp3"
       type="Vowel"
     >
       <Text>

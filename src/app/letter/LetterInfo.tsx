@@ -8,6 +8,7 @@ export interface LetterInfoProps {
   fullName: ReactNode;
   vowelMark: string;
   pronunciation: string;
+  pronunciationFile: string;
   type: string;
 }
 
@@ -16,6 +17,7 @@ export default function LetterInfo({
   fullName,
   vowelMark,
   pronunciation,
+  pronunciationFile,
   type,
   children,
 }: PropsWithChildren<LetterInfoProps>) {
@@ -32,6 +34,9 @@ export default function LetterInfo({
               Vowel mark: <BNText>{vowelMark}</BNText>
             </Text>
             <Text>Pronunciation: {pronunciation}</Text>
+            <audio controls>
+              <source src={pronunciationFile} type="audio/mpeg" />
+            </audio>
             <Text>Type: {type}</Text>
           </div>
           {children && (
@@ -42,11 +47,9 @@ export default function LetterInfo({
           )}
         </Stack>
       </Paper>
-      <Button className="w-fit">
-        <Link className="text-inherit no-underline" href="/alphabet">
-          Back to Alphabet
-        </Link>
-      </Button>
+      <Link className="text-inherit no-underline" href="/alphabet">
+        <Button className="w-fit">Back to Alphabet</Button>
+      </Link>
     </Stack>
   );
 }
