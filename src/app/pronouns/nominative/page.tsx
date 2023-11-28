@@ -1,7 +1,7 @@
 import BNText from "@/components/BNText";
 import { Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
-import PronounTable from "../PronounTable";
+import PronounTable from "../../../components/table/PronounTable";
 
 export const metadata: Metadata = {
   title: "Nominative Pronouns - Bengali Journey",

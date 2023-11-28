@@ -1,37 +1,6 @@
-import BNText from "@/components/BNText";
-import {
-  PropsWithChildren,
-  ReactNode,
-  TdHTMLAttributes,
-  ThHTMLAttributes,
-} from "react";
-
-function ThCell({
-  className,
-  children,
-  ...props
-}: PropsWithChildren<ThHTMLAttributes<HTMLTableCellElement>>) {
-  return (
-    <th
-      {...props}
-      className={`p-2 border-0 border-b border-solid ${className}`}
-    >
-      {children}
-    </th>
-  );
-}
-
-function TdCell({
-  className,
-  children,
-  ...props
-}: PropsWithChildren<TdHTMLAttributes<HTMLTableCellElement>>) {
-  return (
-    <td {...props} className={`p-2 border-0 border-solid ${className}`}>
-      {children}
-    </td>
-  );
-}
+import { ReactNode } from "react";
+import TdCell from "./TdCell";
+import ThCell from "./ThCell";
 
 export interface PronounEntry {
   singular: ReactNode;

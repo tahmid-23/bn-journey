@@ -12,6 +12,11 @@ export default function ImportantLinks() {
         </Link>
       </List.Item>
       <List.Item>
+        <Link className="text-inherit" href="/question-words">
+          <Text>Question Words</Text>
+        </Link>
+      </List.Item>
+      <List.Item>
         <Text>Pronouns</Text>
         <List>
           <List.Item>
