@@ -4,34 +4,29 @@ import { Metadata } from "next";
 import PronounTable from "../PronounTable";
 
 export const metadata: Metadata = {
-  title: "Nominative Pronouns - Bengali Journey",
+  title: "Possessive Pronouns - Bengali Journey",
 };
 
 export default function Page() {
   return (
     <Stack>
-      <Title>Nominative Pronouns</Title>
+      <Title>Possessive Pronouns</Title>
       <Text>
-        Nominative pronouns are pronouns that indicate the subject of a
-        sentence.
+        Possessive pronouns are pronouns that indicate possession.
         <br />
-        In English, examples would be I, you, we, they, etc.
-      </Text>
-      <Text>
-        In Bengali, pronouns are similar to English. There are first-, second-,
-        and third-person pronouns, as well as singular and plural pronouns.
+        In English, examples would be my, your, our, their, etc.
       </Text>
       <br />
       <PronounTable
         first={{
           singular: (
             <>
-              <BNText>আমি</BNText> (ami)
+              <BNText>আমার</BNText> (amar)
             </>
           ),
           plural: (
             <>
-              <BNText>আমরা</BNText> (amra)
+              <BNText>আমাদের</BNText> (amader)
             </>
           ),
         }}
@@ -39,36 +34,36 @@ export default function Page() {
           {
             singular: (
               <>
-                <BNText>তুই</BNText> (tui)
+                <BNText>তোর</BNText> (tor)
               </>
             ),
             plural: (
               <>
-                <BNText>তোরা</BNText> (tora)
+                <BNText>তোদের</BNText> (toder)
               </>
             ),
           },
           {
             singular: (
               <>
-                <BNText>তুমি</BNText> (tumi)
+                <BNText>তোমার</BNText> (tomar)
               </>
             ),
             plural: (
               <>
-                <BNText>তোমরা</BNText> (tomra)
+                <BNText>তোমাদের</BNText> (tomader)
               </>
             ),
           },
           {
             singular: (
               <>
-                <BNText>আপনি</BNText> (apni)
+                <BNText>আপনার</BNText> (apnar)
               </>
             ),
             plural: (
               <>
-                <BNText>আপনারা</BNText> (apnara)
+                <BNText>আপনাদের</BNText> (apnader)
               </>
             ),
           },
@@ -78,74 +73,36 @@ export default function Page() {
             {
               singular: (
                 <>
-                  <BNText>এ</BNText> (e)
+                  <BNText>এর</BNText> (er)
                 </>
               ),
               plural: (
                 <>
-                  <BNText>এরা</BNText> (era)
+                  <BNText>এদের</BNText> (eder)
                 </>
               ),
             },
             {
               singular: (
                 <>
-                  <BNText>ইনি</BNText> (ini)
+                  <BNText>এঁর</BNText> (ẽr)
                 </>
               ),
               plural: (
                 <>
-                  <BNText>এঁরা</BNText> (ẽra)
+                  <BNText>এঁদের</BNText> (ẽder)
                 </>
               ),
             },
             {
               singular: (
                 <>
-                  <BNText>এটা</BNText> (eta)
+                  <BNText>এটার</BNText> (etar)
                 </>
               ),
               plural: (
                 <>
-                  <BNText>এগুলো</BNText> (egulo)
-                </>
-              ),
-            },
-          ],
-          [
-            {
-              singular: (
-                <>
-                  <BNText>ও</BNText> (o)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>ওরা</BNText> (ora)
-                </>
-              ),
-            },
-            {
-              singular: (
-                <>
-                  <BNText>উনি</BNText> (uni)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>ওঁরা</BNText> (õra)
-                </>
-              ),
-            },
-            {
-              singular: (
-                <>
-                  <BNText>ওটা</BNText> (ota)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>ওগুলো</BNText> (ogulo)
+                  <BNText>এগুলোর</BNText> (egulor)
                 </>
               ),
             },
@@ -154,54 +111,80 @@ export default function Page() {
             {
               singular: (
                 <>
-                  <BNText>সে</BNText> (she)
+                  <BNText>ওর</BNText> (or)
                 </>
               ),
               plural: (
                 <>
-                  <BNText>তারা</BNText> (tara)
+                  <BNText>ওদের</BNText> (oder)
                 </>
               ),
             },
             {
               singular: (
                 <>
-                  <BNText>তিনি</BNText> (tini)
+                  <BNText>ওঁর</BNText> (õr)
                 </>
               ),
               plural: (
                 <>
-                  <BNText>তাঁরা</BNText> (tãra)
+                  <BNText>ওঁদের</BNText> (õder)
                 </>
               ),
             },
             {
               singular: (
                 <>
-                  <BNText>সেটা</BNText> (sheta)
+                  <BNText>ওটার</BNText> (otar)
                 </>
               ),
               plural: (
                 <>
-                  <BNText>সেগুলো</BNText> (shegulo)
+                  <BNText>ওগুলোর</BNText> (ogulor)
+                </>
+              ),
+            },
+          ],
+          [
+            {
+              singular: (
+                <>
+                  <BNText>তার</BNText> (tar)
+                </>
+              ),
+              plural: (
+                <>
+                  <BNText>তাদের</BNText> (tader)
+                </>
+              ),
+            },
+            {
+              singular: (
+                <>
+                  <BNText>তাঁর</BNText> (tãr)
+                </>
+              ),
+              plural: (
+                <>
+                  <BNText>তাঁদের</BNText> (tãder)
+                </>
+              ),
+            },
+            {
+              singular: (
+                <>
+                  <BNText>সেটার</BNText> (shetar)
+                </>
+              ),
+              plural: (
+                <>
+                  <BNText>সেগুলোর</BNText> (shegulor)
                 </>
               ),
             },
           ],
         ]}
       />
-      <Text>
-        Pronouns have a concept of &quot;honor&quot;, which are used to show
-        respect.
-        <br />
-        The very familiar second-person pronouns can also be considered
-        derogatory.
-      </Text>
-      <Text>
-        Third-person pronouns also have a sense of proximity. You can refer to
-        people or objects as being here (present in the discussion), there
-        (nearby but not present), or elsewhere (not nearby).
-      </Text>
     </Stack>
   );
 }

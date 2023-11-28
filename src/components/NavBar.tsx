@@ -16,7 +16,7 @@ export default function NavBar() {
         />
         <circle fill="#F42A41" cx="16" cy="17.5" r="7" />
       </svg>
-      <Title order={1}>
+      <Title c="white" order={1}>
         <Link className="text-inherit no-underline" href="/">
           Bengali Journey
         </Link>
