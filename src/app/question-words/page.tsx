@@ -1,5 +1,10 @@
 import TranslationTable from "@/components/table/TranslationTable";
 import { Group, Stack, Title } from "@mantine/core";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Question Words - Bengali Journey",
+};
 
 export default function Page() {
   return (
