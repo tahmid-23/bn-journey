@@ -1,20 +1,41 @@
 "use client";
 
 import { List, Text } from "@mantine/core";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
+import { PropsWithChildren } from "react";
+
+interface UnstyledLinkProps {
+  href: string;
+}
+
+function UnstyledLink({
+  href,
+  children,
+}: PropsWithChildren<UnstyledLinkProps>) {
+  return (
+    <Link className="text-inherit" href={href}>
+      {children}
+    </Link>
+  );
+}
 
 export default function ImportantLinks() {
   return (
     <List>
       <List.Item>
-        <Link className="text-inherit" href="/alphabet">
+        <UnstyledLink href="/alphabet">
           <Text>Alphabet</Text>
-        </Link>
+        </UnstyledLink>
       </List.Item>
       <List.Item>
-        <Link className="text-inherit" href="/question-words">
+        <UnstyledLink href="/question-words">
           <Text>Question Words</Text>
-        </Link>
+        </UnstyledLink>
+      </List.Item>
+      <List.Item>
+        <UnstyledLink href="/possession">
+          <Text>Possession</Text>
+        </UnstyledLink>
       </List.Item>
       <List.Item>
         <Text>Pronouns</Text>
