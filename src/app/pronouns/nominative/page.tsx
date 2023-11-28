@@ -76,7 +76,7 @@ export default function Page() {
               2 (You)
             </TdCell>
             <TdCell className="border-t border-b" rowSpan={3} />
-            <TdCell className="border-t">Very Informal</TdCell>
+            <TdCell className="border-t">Very Familiar</TdCell>
             <TdCell className="border-t">
               <BNText>তুই</BNText> (tui)
             </TdCell>
@@ -85,7 +85,7 @@ export default function Page() {
             </TdCell>
           </tr>
           <tr>
-            <TdCell>Informal</TdCell>
+            <TdCell>Familiar</TdCell>
             <TdCell>
               <BNText>তুমি</BNText> (tumi)
             </TdCell>
@@ -109,7 +109,7 @@ export default function Page() {
             <TdCell className="border-t border-b border-b-gray-500" rowSpan={3}>
               Here
             </TdCell>
-            <TdCell className="border-t">Informal</TdCell>
+            <TdCell className="border-t">Familiar</TdCell>
             <TdCell className="border-t">
               <BNText>এ</BNText> (e)
             </TdCell>
@@ -118,7 +118,7 @@ export default function Page() {
             </TdCell>
           </tr>
           <tr>
-            <TdCell>Formal</TdCell>
+            <TdCell>Polite</TdCell>
             <TdCell>
               <BNText>ইনি</BNText> (ini)
             </TdCell>
@@ -139,7 +139,7 @@ export default function Page() {
             <TdCell className="border-t border-b border-gray-500" rowSpan={3}>
               There
             </TdCell>
-            <TdCell className="border-t border-gray-500">Informal</TdCell>
+            <TdCell className="border-t border-gray-500">Familiar</TdCell>
             <TdCell className="border-t border-gray-500">
               <BNText>ও</BNText> (o)
             </TdCell>
@@ -148,7 +148,7 @@ export default function Page() {
             </TdCell>
           </tr>
           <tr>
-            <TdCell>Formal</TdCell>
+            <TdCell>Polite</TdCell>
             <TdCell>
               <BNText>উনি</BNText> (uni)
             </TdCell>
@@ -169,7 +169,7 @@ export default function Page() {
             <TdCell className="border-t border-gray-500" rowSpan={3}>
               Elsewhere
             </TdCell>
-            <TdCell className="border-t border-gray-500">Informal</TdCell>
+            <TdCell className="border-t border-gray-500">Familiar</TdCell>
             <TdCell className="border-t border-gray-500">
               <BNText>সে</BNText> (she)
             </TdCell>
@@ -178,7 +178,7 @@ export default function Page() {
             </TdCell>
           </tr>
           <tr>
-            <TdCell>Formal</TdCell>
+            <TdCell>Polite</TdCell>
             <TdCell>
               <BNText>তিনি</BNText> (tini)
             </TdCell>
@@ -201,7 +201,7 @@ export default function Page() {
         Pronouns have a concept of &quot;honor&quot;, which are used to show
         respect.
         <br />
-        The very informal second-person pronouns can also be considered
+        The very familiar second-person pronouns can also be considered
         derogatory.
       </Text>
       <Text>
