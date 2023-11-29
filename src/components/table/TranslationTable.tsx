@@ -1,11 +1,11 @@
+import { ReactNode } from "react";
 import BNText from "../BNText";
 import TdCell from "./TdCell";
 import ThCell from "./ThCell";
 
 export interface Translation {
   english: string;
-  bengali: string;
-  pronunciation: string;
+  bengali: ReactNode;
 }
 
 export interface TranslationTableProps {
@@ -24,13 +24,11 @@ export default function TranslationTable({
         </tr>
       </thead>
       <tbody>
-        {translations.map(({ english, bengali, pronunciation }) => {
+        {translations.map(({ english, bengali }) => {
           return (
             <tr key={english}>
               <TdCell>{english}</TdCell>
-              <TdCell>
-                <BNText>{bengali}</BNText> ({pronunciation})
-              </TdCell>
+              <TdCell>{bengali}</TdCell>
             </tr>
           );
         })}

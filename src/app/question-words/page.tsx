@@ -1,3 +1,4 @@
+import BNText from "@/components/BNText";
 import TranslationTable from "@/components/table/TranslationTable";
 import { Group, Stack, Title } from "@mantine/core";
 import { Metadata } from "next";
@@ -14,68 +15,104 @@ export default function Page() {
         <TranslationTable
           translations={[
             {
-              english: "Who",
-              bengali: "কে",
-              pronunciation: "ke",
+              english: "who",
+              bengali: (
+                <>
+                  <BNText>কে</BNText> - (ke)
+                </>
+              ),
             },
             {
-              english: "What",
-              bengali: "কি",
-              pronunciation: "ki",
+              english: "what",
+              bengali: (
+                <>
+                  <BNText>কি</BNText> - (ki)
+                </>
+              ),
             },
             {
-              english: "Where",
-              bengali: "কওতয্",
-              pronunciation: "kothay",
+              english: "where",
+              bengali: (
+                <>
+                  <BNText>কওতয্</BNText> - (kothay)
+                </>
+              ),
             },
             {
-              english: "When",
-              bengali: "কখন",
-              pronunciation: "kokhon",
+              english: "when",
+              bengali: (
+                <>
+                  <BNText>কখন</BNText> - (kokhon)
+                </>
+              ),
             },
             {
-              english: "Why",
-              bengali: "কএনও",
-              pronunciation: "keno",
+              english: "why",
+              bengali: (
+                <>
+                  <BNText>কএনও</BNText> - (keno)
+                </>
+              ),
             },
           ]}
         />
         <TranslationTable
           translations={[
             {
-              english: "How",
-              bengali: "কএমওন্",
-              pronunciation: "kemon",
+              english: "how",
+              bengali: (
+                <>
+                  <BNText>কএমওন্</BNText> - (kemon)
+                </>
+              ),
             },
             {
-              english: "How (in what way)",
-              bengali: "কিভাবে",
-              pronunciation: "kibhabe",
+              english: "how (in what way)",
+              bengali: (
+                <>
+                  <BNText>কিভাবে</BNText> - (kibhabe)
+                </>
+              ),
             },
             {
-              english: "How long",
-              bengali: "কতক্ষণ",
-              pronunciation: "kotokhkhon",
+              english: "how long",
+              bengali: (
+                <>
+                  <BNText>কতক্ষণ</BNText> - (kotokhkhon)
+                </>
+              ),
             },
             {
-              english: "How much",
-              bengali: "কত",
-              pronunciation: "koto",
+              english: "how much",
+              bengali: (
+                <>
+                  <BNText>কত</BNText> - (koto)
+                </>
+              ),
             },
             {
-              english: "Which",
-              bengali: "কোন",
-              pronunciation: "kon",
+              english: "which",
+              bengali: (
+                <>
+                  <BNText>কোন</BNText> - (kon)
+                </>
+              ),
             },
             {
-              english: "Whose",
-              bengali: "কার",
-              pronunciation: "kar",
+              english: "whose",
+              bengali: (
+                <>
+                  <BNText>কার</BNText> - (kar)
+                </>
+              ),
             },
             {
-              english: "Whom",
-              bengali: "কাকে",
-              pronunciation: "kake",
+              english: "whom",
+              bengali: (
+                <>
+                  <BNText>কাকে</BNText> - (kake)
+                </>
+              ),
             },
           ]}
         />
