@@ -1,6 +1,11 @@
 import BNText from "@/components/BNText";
 import TranslationTable from "@/components/table/TranslationTable";
 import { Group, Stack, Text, Title } from "@mantine/core";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Numbers - Bengali Journey",
+};
 
 export default function Page() {
   return (
