@@ -1,7 +1,8 @@
 import BNText from "@/components/BNText";
+import BasicPage from "@/components/BasicPage";
 import ConjugationEndingTable from "@/components/table/ConjugationEndingTable";
 import ConjugationTable from "@/components/table/ConjugationTable";
-import { Group, Stack, Text, Title } from "@mantine/core";
+import { Group, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -11,8 +12,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Stack>
-      <Title>Simple Present</Title>
+    <BasicPage title="Simple Present">
       <Text>
         The simple present tense is similar to the English present tense.
         <br />
@@ -97,6 +97,6 @@ export default function Page() {
           />
         </div>
       </Group>
-    </Stack>
+    </BasicPage>
   );
 }

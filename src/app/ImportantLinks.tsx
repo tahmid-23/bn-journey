@@ -78,6 +78,16 @@ export default function ImportantLinks() {
                   <Text>Present Simple</Text>
                 </UnstyledLink>
               </List.Item>
+              <List.Item>
+                <UnstyledLink href="/tense/past/simple">
+                  <Text>Past Simple</Text>
+                </UnstyledLink>
+              </List.Item>
+              <List.Item>
+                <UnstyledLink href="/tense/future">
+                  <Text>Future</Text>
+                </UnstyledLink>
+              </List.Item>
             </List>
           </List.Item>
         </List>

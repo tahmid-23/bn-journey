@@ -2,6 +2,7 @@ import { Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
 import PronounTable from "../../../components/table/PronounTable";
 import BNPronunciation from "@/components/BNPronunciation";
+import BasicPage from "@/components/BasicPage";
 
 export const metadata: Metadata = {
   title: "Possessive Pronouns - Bengali Journey",
@@ -9,8 +10,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Stack>
-      <Title>Possessive Pronouns</Title>
+    <BasicPage title="Possessive Pronouns">
       <Text>
         Possessive pronouns are pronouns that indicate possession.
         <br />
@@ -95,6 +95,6 @@ export default function Page() {
           ],
         ]}
       />
-    </Stack>
+    </BasicPage>
   );
 }

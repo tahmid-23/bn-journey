@@ -1,4 +1,5 @@
 import BNPronunciation from "@/components/BNPronunciation";
+import BasicPage from "@/components/BasicPage";
 import TranslationTable from "@/components/table/TranslationTable";
 import { Group, Stack, Title } from "@mantine/core";
 import { Metadata } from "next";
@@ -9,8 +10,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Stack>
-      <Title>Question Words</Title>
+    <BasicPage title="Question Words">
       <Group align="start" gap="xl">
         <TranslationTable
           translations={[
@@ -77,6 +77,6 @@ export default function Page() {
           ]}
         />
       </Group>
-    </Stack>
+    </BasicPage>
   );
 }

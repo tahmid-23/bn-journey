@@ -1,4 +1,5 @@
 import BNPronunciation from "@/components/BNPronunciation";
+import BasicPage from "@/components/BasicPage";
 import TranslationTable from "@/components/table/TranslationTable";
 import { Group, Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
@@ -9,8 +10,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Stack>
-      <Title>Numbers</Title>
+    <BasicPage title="Numbers">
       <Group align="start" gap="xl">
         <TranslationTable
           translations={[
@@ -181,6 +181,6 @@ export default function Page() {
         The numbers between 21-99 are somewhat irregular. Although there are
         patterns, it is easier to learn through experience.
       </Text>
-    </Stack>
+    </BasicPage>
   );
 }

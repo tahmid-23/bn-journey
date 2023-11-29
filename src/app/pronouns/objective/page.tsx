@@ -2,6 +2,7 @@ import { Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
 import PronounTable from "../../../components/table/PronounTable";
 import BNPronunciation from "@/components/BNPronunciation";
+import BasicPage from "@/components/BasicPage";
 
 export const metadata: Metadata = {
   title: "Objective Pronouns - Bengali Journey",
@@ -9,8 +10,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Stack>
-      <Title>Objective Pronouns</Title>
+    <BasicPage title="Objective Pronouns">
       <Text>
         Objective pronouns are pronouns that indicate the direct object or
         indirect object of a sentence.
@@ -120,6 +120,6 @@ export default function Page() {
           ],
         ]}
       />
-    </Stack>
+    </BasicPage>
   );
 }

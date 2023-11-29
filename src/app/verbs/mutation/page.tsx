@@ -5,11 +5,11 @@ import { Stack, Text, Title } from "@mantine/core";
 import MutationExceptionsV from "./MutationExceptionsV";
 import MutationExceptionsA from "./MutationExceptionsA";
 import BNPronunciation from "@/components/BNPronunciation";
+import BasicPage from "@/components/BasicPage";
 
 export default function Page() {
   return (
-    <Stack>
-      <Title>Verb Mutation</Title>
+    <BasicPage title="Verb Mutation">
       <Text>
         When conjugating verbs, the first vowel of the verb stem may mutate to
         make a different sound.
@@ -133,6 +133,6 @@ export default function Page() {
         <em>except</em> in the following cases:
       </Text>
       <MutationExceptionsA />
-    </Stack>
+    </BasicPage>
   );
 }

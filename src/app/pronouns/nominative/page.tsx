@@ -2,6 +2,7 @@ import { Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
 import PronounTable from "../../../components/table/PronounTable";
 import BNPronunciation from "@/components/BNPronunciation";
+import BasicPage from "@/components/BasicPage";
 
 export const metadata: Metadata = {
   title: "Nominative Pronouns - Bengali Journey",
@@ -9,8 +10,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Stack>
-      <Title>Nominative Pronouns</Title>
+    <BasicPage title="Nominative Pronouns">
       <Text>
         Nominative pronouns are pronouns that indicate the subject of a
         sentence.
@@ -102,6 +102,6 @@ export default function Page() {
         people or objects as being here (present in the discussion), there
         (nearby but not present), or elsewhere (not nearby).
       </Text>
-    </Stack>
+    </BasicPage>
   );
 }

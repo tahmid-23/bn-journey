@@ -20,11 +20,11 @@ export default function ConjugationTableBase({
   polite,
 }: ConjugationTableBaseProps) {
   return (
-    <table>
+    <table className="w-fit border-collapse">
       <thead>
         <tr>
-          <ThCell>Subject + Formality</ThCell>
-          <ThCell>{columnNode}</ThCell>
+          <ThCell className="border-b">Subject + Formality</ThCell>
+          <ThCell className="border-b">{columnNode}</ThCell>
         </tr>
       </thead>
       <tbody>

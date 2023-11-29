@@ -3,6 +3,7 @@ import BNPronunciation from "@/components/BNPronunciation";
 import TranslationTable from "@/components/table/TranslationTable";
 import { Group, Stack, Title } from "@mantine/core";
 import { Metadata } from "next";
+import BasicPage from "@/components/BasicPage";
 
 export const metadata: Metadata = {
   title: "Conjunctions - Bengali Journey",
@@ -10,8 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Stack>
-      <Title>Conjunctions</Title>
+    <BasicPage title="Conjunctions">
       <Group align="start" gap="xl">
         <TranslationTable
           translations={[
@@ -75,6 +75,6 @@ export default function Page() {
           ]}
         />
       </Group>
-    </Stack>
+    </BasicPage>
   );
 }
