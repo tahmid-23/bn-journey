@@ -28,6 +28,11 @@ export default function ImportantLinks() {
         </UnstyledLink>
       </List.Item>
       <List.Item>
+        <UnstyledLink href="/numbers">
+          <Text>Numbers</Text>
+        </UnstyledLink>
+      </List.Item>
+      <List.Item>
         <UnstyledLink href="/conjunctions">
           <Text>Conjunctions</Text>
         </UnstyledLink>
