@@ -41,19 +41,34 @@ export default function ImportantLinks() {
         <Text>Pronouns</Text>
         <List>
           <List.Item>
-            <Link className="text-inherit" href="/pronouns/nominative">
+            <UnstyledLink href="/pronouns/nominative">
               <Text>Nominative Pronouns</Text>
-            </Link>
+            </UnstyledLink>
           </List.Item>
           <List.Item>
-            <Link className="text-inherit" href="/pronouns/objective">
+            <UnstyledLink href="/pronouns/objective">
               <Text>Objective Pronouns</Text>
-            </Link>
+            </UnstyledLink>
           </List.Item>
           <List.Item>
-            <Link className="text-inherit" href="/pronouns/possessive">
+            <UnstyledLink href="/pronouns/possessive">
               <Text>Possessive Pronouns</Text>
-            </Link>
+            </UnstyledLink>
+          </List.Item>
+        </List>
+      </List.Item>
+      <List.Item>
+        <Text>Verbs</Text>
+        <List>
+          <List.Item>
+            <Text>Conjugations</Text>
+            <List>
+              <List.Item>
+                <UnstyledLink href="/tense/present/simple">
+                  <Text>Present Simple</Text>
+                </UnstyledLink>
+              </List.Item>
+            </List>
           </List.Item>
         </List>
       </List.Item>

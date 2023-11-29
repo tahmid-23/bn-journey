@@ -8,7 +8,7 @@ export default function ThCell({
   return (
     <th
       {...props}
-      className={`p-2 border-0 border-b border-solid text-left ${className}`}
+      className={`p-2 border-0 border-solid text-left ${className}`}
     >
       {children}
     </th>

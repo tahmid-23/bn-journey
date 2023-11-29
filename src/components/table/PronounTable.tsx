@@ -26,26 +26,26 @@ export default function PronounTable({
     <table className="w-fit border-collapse">
       <thead>
         <tr>
-          <ThCell>Subject</ThCell>
-          <ThCell>Proximity</ThCell>
-          <ThCell>Honor</ThCell>
-          <ThCell>Singular</ThCell>
-          <ThCell>Plural</ThCell>
+          <ThCell className="border-b">Subject</ThCell>
+          <ThCell className="border-b">Proximity</ThCell>
+          <ThCell className="border-b">Honor</ThCell>
+          <ThCell className="border-b">Singular</ThCell>
+          <ThCell className="border-b">Plural</ThCell>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <TdCell className="border-t border-b">1 (I/We)</TdCell>
-          <TdCell className="border-t border-b" />
-          <TdCell className="border-t border-b" />
-          <TdCell className="border-t border-b">{first.singular}</TdCell>
-          <TdCell className="border-t border-b">{first.plural}</TdCell>
+          <TdCell className="border-y">1 (I/We)</TdCell>
+          <TdCell className="border-y" />
+          <TdCell className="border-y" />
+          <TdCell className="border-y">{first.singular}</TdCell>
+          <TdCell className="border-y">{first.plural}</TdCell>
         </tr>
         <tr>
-          <TdCell className="border-t border-b" rowSpan={3}>
+          <TdCell className="border-y" rowSpan={3}>
             2 (You)
           </TdCell>
-          <TdCell className="border-t border-b" rowSpan={3} />
+          <TdCell className="border-y" rowSpan={3} />
           <TdCell className="border-t">Very Familiar</TdCell>
           <TdCell className="border-t">{second[0].singular}</TdCell>
           <TdCell className="border-t">{second[0].plural}</TdCell>
@@ -64,7 +64,7 @@ export default function PronounTable({
           <TdCell className="border-t" rowSpan={9}>
             3 (He/She/It)
           </TdCell>
-          <TdCell className="border-t border-b border-b-gray-500" rowSpan={3}>
+          <TdCell className="border-y border-b-gray-500" rowSpan={3}>
             Here
           </TdCell>
           <TdCell className="border-t">Familiar</TdCell>
@@ -86,7 +86,7 @@ export default function PronounTable({
           </TdCell>
         </tr>
         <tr>
-          <TdCell className="border-t border-b border-gray-500" rowSpan={3}>
+          <TdCell className="border-y border-gray-500" rowSpan={3}>
             There
           </TdCell>
           <TdCell className="border-t border-gray-500">Familiar</TdCell>
