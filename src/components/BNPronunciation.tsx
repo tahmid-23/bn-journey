@@ -11,7 +11,7 @@ export default function BNPronunciation({
 }: BNPronunciationProps) {
   return (
     <>
-      <BNText>{bengali}</BNText> - ({pronunciation})
+      <BNText>{bengali}</BNText> ({pronunciation})
     </>
   );
 }
