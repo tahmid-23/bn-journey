@@ -53,6 +53,11 @@ export default function Page() {
               pronunciation: "kibhabe",
             },
             {
+              english: "How long",
+              bengali: "কতক্ষণ",
+              pronunciation: "kotokhkhon",
+            },
+            {
               english: "How much",
               bengali: "কত",
               pronunciation: "koto",

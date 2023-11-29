@@ -3,6 +3,7 @@ import ConjugationEndingTable from "@/components/table/ConjugationEndingTable";
 import ConjugationTable from "@/components/table/ConjugationTable";
 import { Group, Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Simple Present - Bengali Journey",
@@ -18,8 +19,8 @@ export default function Page() {
         English examples would be &quot;I eat&quot; or &quot;she runs&quot;.
       </Text>
       <Text>
-        To conjugate in the present tense, remove the verbal ending and mutate
-        the first vowel.
+        To conjugate in the present tense, remove the verbal ending and{" "}
+        <Link href="/verbs/mutation">mutate</Link> the first vowel.
         <br />
         Then, based on the subject, formality, and whether the last letter of
         the shortened verb is a consonant, add the corresponding ending.

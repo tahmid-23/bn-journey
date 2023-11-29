@@ -1,7 +1,7 @@
 "use client";
 
 import { List, Text } from "@mantine/core";
-import Link, { LinkProps } from "next/link";
+import Link from "next/link";
 import { PropsWithChildren } from "react";
 
 interface UnstyledLinkProps {
@@ -33,11 +33,6 @@ export default function ImportantLinks() {
         </UnstyledLink>
       </List.Item>
       <List.Item>
-        <UnstyledLink href="/possession">
-          <Text>Possession</Text>
-        </UnstyledLink>
-      </List.Item>
-      <List.Item>
         <Text>Pronouns</Text>
         <List>
           <List.Item>
@@ -58,8 +53,13 @@ export default function ImportantLinks() {
         </List>
       </List.Item>
       <List.Item>
-        <Text>Verbs</Text>
+        <UnstyledLink href="/verbs">
+          <Text>Verbs</Text>
+        </UnstyledLink>
         <List>
+          <List.Item>
+            <UnstyledLink href="/verbs/mutation">Mutation</UnstyledLink>
+          </List.Item>
           <List.Item>
             <Text>Conjugations</Text>
             <List>
