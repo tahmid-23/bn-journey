@@ -1,4 +1,5 @@
 import BNText from "@/components/BNText";
+import BNPronunciation from "@/components/BNPronunciation";
 import { Stack, Text, Title } from "@mantine/core";
 import Link from "next/link";
 
@@ -11,21 +12,24 @@ export default function Page() {
         <BNText>আ</BNText>. To get the stem of a verb, we remove the verbal noun
         ending.
         <br />
-        For most verbs, the verbal noun ending is just <BNText>আ</BNText> (a).
-        For example, the stem of <BNText>বলা</BNText> is <BNText>বল</BNText>.
+        For most verbs, the verbal noun ending is just{" "}
+        <BNPronunciation bengali="আ" pronunciation="a" />. For example, the stem
+        of <BNText>বলা</BNText> is <BNText>বল</BNText>.
         <br />
-        Verbs whose stems end with a vowel use <BNText>ওয়া</BNText> (wa) as
-        their verbal noun ending. For example, the stem of{" "}
-        <BNText>দেওয়া</BNText> is <BNText>দে</BNText>.
+        Verbs whose stems end with a vowel use{" "}
+        <BNPronunciation bengali="ওয়া" pronunciation="wa" /> as their verbal
+        noun ending. For example, the stem of <BNText>দেওয়া</BNText> is{" "}
+        <BNText>দে</BNText>.
       </Text>
       <Text>
         We can classify verb stems into five main classes: CVC/VC, CAC/AC, CV,
         CA, and other. C stands for consonant, V sounds for non-
         <BNText>আ</BNText> vowel, and A stands for <BNText>আ</BNText>.
         <br />
-        For example, <BNText>করা</BNText> (kora) is CVC, <BNText>কাটা</BNText>{" "}
-        (kata) is CAC, <BNText>ধোয়া</BNText> (dhowa) is CV, and{" "}
-        <BNText>খাওয়া</BNText> (khawa) is CA.
+        For example, <BNPronunciation bengali="করা" pronunciation="kora" /> is
+        CVC, <BNPronunciation bengali="কাটা" pronunciation="kata" /> is CAC,{" "}
+        <BNPronunciation bengali="ধোয়া" pronunciation="dhowa" /> is CV, and{" "}
+        <BNPronunciation bengali="খাওয়া" pronunciation="khawa" /> is CA.
       </Text>
       <Text>
         Once we find the stem of a verb, we can conjugate it based on a set of

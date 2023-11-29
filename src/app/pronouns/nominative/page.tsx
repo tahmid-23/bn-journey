@@ -1,7 +1,7 @@
-import BNText from "@/components/BNText";
 import { Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
 import PronounTable from "../../../components/table/PronounTable";
+import BNPronunciation from "@/components/BNPronunciation";
 
 export const metadata: Metadata = {
   title: "Nominative Pronouns - Bengali Journey",
@@ -24,167 +24,67 @@ export default function Page() {
       <br />
       <PronounTable
         first={{
-          singular: (
-            <>
-              <BNText>আমি</BNText> (ami)
-            </>
-          ),
-          plural: (
-            <>
-              <BNText>আমরা</BNText> (amra)
-            </>
-          ),
+          singular: <BNPronunciation bengali="আমি" pronunciation="ami" />,
+          plural: <BNPronunciation bengali="আমরা" pronunciation="amra" />,
         }}
         second={[
           {
-            singular: (
-              <>
-                <BNText>তুই</BNText> (tui)
-              </>
-            ),
-            plural: (
-              <>
-                <BNText>তোরা</BNText> (tora)
-              </>
-            ),
+            singular: <BNPronunciation bengali="তুই" pronunciation="tui" />,
+            plural: <BNPronunciation bengali="তোরা" pronunciation="tora" />,
           },
           {
-            singular: (
-              <>
-                <BNText>তুমি</BNText> (tumi)
-              </>
-            ),
-            plural: (
-              <>
-                <BNText>তোমরা</BNText> (tomra)
-              </>
-            ),
+            singular: <BNPronunciation bengali="তুমি" pronunciation="tumi" />,
+            plural: <BNPronunciation bengali="তোমরা" pronunciation="tomra" />,
           },
           {
-            singular: (
-              <>
-                <BNText>আপনি</BNText> (apni)
-              </>
-            ),
-            plural: (
-              <>
-                <BNText>আপনারা</BNText> (apnara)
-              </>
-            ),
+            singular: <BNPronunciation bengali="আপনি" pronunciation="apni" />,
+            plural: <BNPronunciation bengali="আপনারা" pronunciation="apnara" />,
           },
         ]}
         third={[
           [
             {
-              singular: (
-                <>
-                  <BNText>এ</BNText> (e)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>এরা</BNText> (era)
-                </>
-              ),
+              singular: <BNPronunciation bengali="এ" pronunciation="e" />,
+              plural: <BNPronunciation bengali="এরা" pronunciation="era" />,
             },
             {
-              singular: (
-                <>
-                  <BNText>ইনি</BNText> (ini)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>এঁরা</BNText> (ẽra)
-                </>
-              ),
+              singular: <BNPronunciation bengali="ইনি" pronunciation="ini" />,
+              plural: <BNPronunciation bengali="এঁরা" pronunciation="ẽra" />,
             },
             {
-              singular: (
-                <>
-                  <BNText>এটা</BNText> (eta)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>এগুলো</BNText> (egulo)
-                </>
-              ),
+              singular: <BNPronunciation bengali="এটা" pronunciation="eta" />,
+              plural: <BNPronunciation bengali="এগুলো" pronunciation="egulo" />,
             },
           ],
           [
             {
-              singular: (
-                <>
-                  <BNText>ও</BNText> (o)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>ওরা</BNText> (ora)
-                </>
-              ),
+              singular: <BNPronunciation bengali="ও" pronunciation="o" />,
+              plural: <BNPronunciation bengali="ওরা" pronunciation="ora" />,
             },
             {
-              singular: (
-                <>
-                  <BNText>উনি</BNText> (uni)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>ওঁরা</BNText> (õra)
-                </>
-              ),
+              singular: <BNPronunciation bengali="উনি" pronunciation="uni" />,
+              plural: <BNPronunciation bengali="ওঁরা" pronunciation="õra" />,
             },
             {
-              singular: (
-                <>
-                  <BNText>ওটা</BNText> (ota)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>ওগুলো</BNText> (ogulo)
-                </>
-              ),
+              singular: <BNPronunciation bengali="ওটা" pronunciation="ota" />,
+              plural: <BNPronunciation bengali="ওগুলো" pronunciation="ogulo" />,
             },
           ],
           [
             {
-              singular: (
-                <>
-                  <BNText>সে</BNText> (she)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>তারা</BNText> (tara)
-                </>
-              ),
+              singular: <BNPronunciation bengali="সে" pronunciation="she" />,
+              plural: <BNPronunciation bengali="তারা" pronunciation="tara" />,
+            },
+            {
+              singular: <BNPronunciation bengali="তিনি" pronunciation="tini" />,
+              plural: <BNPronunciation bengali="তাঁরা" pronunciation="tãra" />,
             },
             {
               singular: (
-                <>
-                  <BNText>তিনি</BNText> (tini)
-                </>
+                <BNPronunciation bengali="সেটা" pronunciation="sheta" />
               ),
               plural: (
-                <>
-                  <BNText>তাঁরা</BNText> (tãra)
-                </>
-              ),
-            },
-            {
-              singular: (
-                <>
-                  <BNText>সেটা</BNText> (sheta)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>সেগুলো</BNText> (shegulo)
-                </>
+                <BNPronunciation bengali="সেগুলো" pronunciation="shegulo" />
               ),
             },
           ],

@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import BNText from "../BNText";
 import TdCell from "./TdCell";
 import ThCell from "./ThCell";
 

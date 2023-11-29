@@ -4,6 +4,7 @@ import ThCell from "@/components/table/ThCell";
 import { Stack, Text, Title } from "@mantine/core";
 import MutationExceptionsV from "./MutationExceptionsV";
 import MutationExceptionsA from "./MutationExceptionsA";
+import BNPronunciation from "@/components/BNPronunciation";
 
 export default function Page() {
   return (
@@ -24,42 +25,42 @@ export default function Page() {
         <tbody>
           <tr>
             <TdCell>
-              <BNText>এ</BNText> (e)
+              <BNPronunciation bengali="এ" pronunciation="e" />
             </TdCell>
             <TdCell>
-              <BNText>ই</BNText> (i)
-            </TdCell>
-          </tr>
-          <tr>
-            <TdCell>
-              <BNText>এ</BNText> (æ)
-            </TdCell>
-            <TdCell>
-              <BNText>এ</BNText> (e)
+              <BNPronunciation bengali="ই" pronunciation="i" />
             </TdCell>
           </tr>
           <tr>
             <TdCell>
-              <BNText>ও</BNText> (o)
+              <BNPronunciation bengali="এ" pronunciation="æ" />
             </TdCell>
             <TdCell>
-              <BNText>উ</BNText> (u)
-            </TdCell>
-          </tr>
-          <tr>
-            <TdCell>
-              <BNText>অ</BNText> (o)
-            </TdCell>
-            <TdCell>
-              <BNText>অ</BNText> (ɔ)
+              <BNPronunciation bengali="এ" pronunciation="e" />
             </TdCell>
           </tr>
           <tr>
             <TdCell>
-              <BNText>আ</BNText> (a)
+              <BNPronunciation bengali="ও" pronunciation="o" />
             </TdCell>
             <TdCell>
-              <BNText>এ</BNText> (e)
+              <BNPronunciation bengali="উ" pronunciation="u" />
+            </TdCell>
+          </tr>
+          <tr>
+            <TdCell>
+              <BNPronunciation bengali="অ" pronunciation="o" />
+            </TdCell>
+            <TdCell>
+              <BNPronunciation bengali="অ" pronunciation="ɔ" />
+            </TdCell>
+          </tr>
+          <tr>
+            <TdCell>
+              <BNPronunciation bengali="আ" pronunciation="a" />
+            </TdCell>
+            <TdCell>
+              <BNPronunciation bengali="এ" pronunciation="e" />
             </TdCell>
           </tr>
         </tbody>
@@ -79,42 +80,45 @@ export default function Page() {
         <tbody>
           <tr>
             <TdCell>
-              <BNText>তুমি লেখ</BNText> (tumi lekho)
+              <BNPronunciation bengali="তুমি লেখ" pronunciation="tumi lekho" />
             </TdCell>
             <TdCell>
-              <BNText>আমি লিখি</BNText> (ami likhi)
-            </TdCell>
-          </tr>
-          <tr>
-            <TdCell>
-              <BNText>তুমি লেখ</BNText> (tumi dækho)
-            </TdCell>
-            <TdCell>
-              <BNText>আমি লিখি</BNText> (ami dekhi)
+              <BNPronunciation bengali="আমি লিখি" pronunciation="ami likhi" />
             </TdCell>
           </tr>
           <tr>
             <TdCell>
-              <BNText>তুমি বোঝ</BNText> (tumi bojho)
+              <BNPronunciation bengali="তুমি লেখ" pronunciation="tumi dækho" />
             </TdCell>
             <TdCell>
-              <BNText>আমি বুঝি</BNText> (ami bujhi)
-            </TdCell>
-          </tr>
-          <tr>
-            <TdCell>
-              <BNText>তুমি বল</BNText> (tumi bolo)
-            </TdCell>
-            <TdCell>
-              <BNText>আমি বলি</BNText> (ami bɔli)
+              <BNPronunciation bengali="আমি লিখি" pronunciation="ami dekhi" />
             </TdCell>
           </tr>
           <tr>
             <TdCell>
-              <BNText>আমি খাই</BNText> (ami khai)
+              <BNPronunciation bengali="তুমি বোঝ" pronunciation="tumi bojho" />
             </TdCell>
             <TdCell>
-              <BNText>আমি খেয়েছি</BNText> (ami kheyechi)
+              <BNPronunciation bengali="আমি বুঝি" pronunciation="ami bujhi" />
+            </TdCell>
+          </tr>
+          <tr>
+            <TdCell>
+              <BNPronunciation bengali="তুমি বল" pronunciation="tumi bolo" />
+            </TdCell>
+            <TdCell>
+              <BNPronunciation bengali="আমি বলি" pronunciation="ami bɔli" />
+            </TdCell>
+          </tr>
+          <tr>
+            <TdCell>
+              <BNPronunciation bengali="আমি খাই" pronunciation="ami khai" />
+            </TdCell>
+            <TdCell>
+              <BNPronunciation
+                bengali="আমি খেয়েছি"
+                pronunciation="ami kheyechi"
+              />
             </TdCell>
           </tr>
         </tbody>

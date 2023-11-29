@@ -1,7 +1,7 @@
-import BNText from "@/components/BNText";
 import { Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
 import PronounTable from "../../../components/table/PronounTable";
+import BNPronunciation from "@/components/BNPronunciation";
 
 export const metadata: Metadata = {
   title: "Objective Pronouns - Bengali Journey",
@@ -20,167 +20,101 @@ export default function Page() {
       <br />
       <PronounTable
         first={{
-          singular: (
-            <>
-              <BNText>আমাকে</BNText> (amake)
-            </>
-          ),
+          singular: <BNPronunciation bengali="আমাকে" pronunciation="amake" />,
           plural: (
-            <>
-              <BNText>আমাদেরকে</BNText> (amaderke)
-            </>
+            <BNPronunciation bengali="আমাদেরকে" pronunciation="amaderke" />
           ),
         }}
         second={[
           {
-            singular: (
-              <>
-                <BNText>তোকে</BNText> (toke)
-              </>
-            ),
+            singular: <BNPronunciation bengali="তোকে" pronunciation="toke" />,
             plural: (
-              <>
-                <BNText>তোদেরকে</BNText> (toderke)
-              </>
+              <BNPronunciation bengali="তোদেরকে" pronunciation="toderke" />
             ),
           },
           {
             singular: (
-              <>
-                <BNText>তোমাকে</BNText> (tomake)
-              </>
+              <BNPronunciation bengali="তোমাকে" pronunciation="tomake" />
             ),
             plural: (
-              <>
-                <BNText>তোমাদেরকে</BNText> (tomaderke)
-              </>
+              <BNPronunciation bengali="তোমাদেরকে" pronunciation="tomaderke" />
             ),
           },
           {
             singular: (
-              <>
-                <BNText>আপনাকে</BNText> (apnake)
-              </>
+              <BNPronunciation bengali="আপনাকে" pronunciation="apnake" />
             ),
             plural: (
-              <>
-                <BNText>আপনাদেরকে</BNText> (apnaderke)
-              </>
+              <BNPronunciation bengali="আপনাদেরকে" pronunciation="apnaderke" />
             ),
           },
         ]}
         third={[
           [
             {
-              singular: (
-                <>
-                  <BNText>একে</BNText> (eke)
-                </>
-              ),
+              singular: <BNPronunciation bengali="একে" pronunciation="eke" />,
               plural: (
-                <>
-                  <BNText>এদেরকে</BNText> (ederke)
-                </>
+                <BNPronunciation bengali="এদেরকে" pronunciation="ederke" />
+              ),
+            },
+            {
+              singular: <BNPronunciation bengali="এঁকে" pronunciation="ẽke" />,
+              plural: (
+                <BNPronunciation bengali="এঁদেরকে" pronunciation="ẽderke" />
               ),
             },
             {
               singular: (
-                <>
-                  <BNText>এঁকে</BNText> (ẽke)
-                </>
+                <BNPronunciation bengali="এটাকে" pronunciation="etake" />
               ),
               plural: (
-                <>
-                  <BNText>এঁদেরকে</BNText> (ẽderke)
-                </>
-              ),
-            },
-            {
-              singular: (
-                <>
-                  <BNText>এটাকে</BNText> (etake)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>এগুলোকে</BNText> (eguloke)
-                </>
+                <BNPronunciation bengali="এগুলোকে" pronunciation="eguloke" />
               ),
             },
           ],
           [
             {
-              singular: (
-                <>
-                  <BNText>ওকে</BNText> (oke)
-                </>
-              ),
+              singular: <BNPronunciation bengali="ওকে" pronunciation="oke" />,
               plural: (
-                <>
-                  <BNText>ওদেরকে</BNText> (oderke)
-                </>
+                <BNPronunciation bengali="ওদেরকে" pronunciation="oderke" />
+              ),
+            },
+            {
+              singular: <BNPronunciation bengali="ওঁকে" pronunciation="õke" />,
+              plural: (
+                <BNPronunciation bengali="ওঁদেরকে" pronunciation="õderke" />
               ),
             },
             {
               singular: (
-                <>
-                  <BNText>ওঁকে</BNText> (õke)
-                </>
+                <BNPronunciation bengali="ওটাকে" pronunciation="otake" />
               ),
               plural: (
-                <>
-                  <BNText>ওঁদেরকে</BNText> (õderke)
-                </>
-              ),
-            },
-            {
-              singular: (
-                <>
-                  <BNText>ওটাকে</BNText> (otake)
-                </>
-              ),
-              plural: (
-                <>
-                  <BNText>ওগুলোকে</BNText> (oguloke)
-                </>
+                <BNPronunciation bengali="ওগুলোকে" pronunciation="oguloke" />
               ),
             },
           ],
           [
             {
-              singular: (
-                <>
-                  <BNText>তাকে</BNText> (take)
-                </>
-              ),
+              singular: <BNPronunciation bengali="তাকে" pronunciation="take" />,
               plural: (
-                <>
-                  <BNText>তাদেরকে</BNText> (taderke)
-                </>
+                <BNPronunciation bengali="তাদেরকে" pronunciation="taderke" />
               ),
             },
             {
               singular: (
-                <>
-                  <BNText>তাঁকে</BNText> (tãke)
-                </>
+                <BNPronunciation bengali="তাঁকে" pronunciation="tãke" />
               ),
               plural: (
-                <>
-                  <BNText>তাঁদেরকে</BNText> (tãderke)
-                </>
+                <BNPronunciation bengali="তাঁদেরকে" pronunciation="tãderke" />
               ),
             },
             {
               singular: (
-                <>
-                  <BNText>সেটাকে</BNText> (shetake)
-                </>
+                <BNPronunciation bengali="সেটাকে" pronunciation="shetake" />
               ),
               plural: (
-                <>
-                  <BNText>সেগুলোকে</BNText> (sheguloke)
-                </>
+                <BNPronunciation bengali="সেগুলোকে" pronunciation="sheguloke" />
               ),
             },
           ],

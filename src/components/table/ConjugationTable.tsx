@@ -1,21 +1,9 @@
-import BNText from "../BNText";
+import BNPronunciation from "../BNPronunciation";
 import ConjugationTableBase from "./ConjugationTableBase";
 
 export interface Conjugation {
   conjugation: string;
   pronunciation: string;
-}
-
-interface ConjugationEntryProps {
-  conjugation: Conjugation;
-}
-
-function ConjugationEntry({ conjugation }: ConjugationEntryProps) {
-  return (
-    <>
-      <BNText>{conjugation.conjugation}</BNText> - ({conjugation.pronunciation})
-    </>
-  );
 }
 
 export interface ConjugationTableProps {
@@ -36,11 +24,36 @@ export default function ConjugationTable({
   return (
     <ConjugationTableBase
       columnNode="Conjugation"
-      first={<ConjugationEntry conjugation={first} />}
-      secondVeryFamiliar={<ConjugationEntry conjugation={secondVeryFamiliar} />}
-      secondFamiliar={<ConjugationEntry conjugation={secondFamiliar} />}
-      thirdFamiliar={<ConjugationEntry conjugation={thirdFamiliar} />}
-      polite={<ConjugationEntry conjugation={polite} />}
+      first={
+        <BNPronunciation
+          bengali={first.conjugation}
+          pronunciation={first.pronunciation}
+        />
+      }
+      secondVeryFamiliar={
+        <BNPronunciation
+          bengali={secondVeryFamiliar.conjugation}
+          pronunciation={secondVeryFamiliar.pronunciation}
+        />
+      }
+      secondFamiliar={
+        <BNPronunciation
+          bengali={secondFamiliar.conjugation}
+          pronunciation={secondFamiliar.pronunciation}
+        />
+      }
+      thirdFamiliar={
+        <BNPronunciation
+          bengali={thirdFamiliar.conjugation}
+          pronunciation={thirdFamiliar.pronunciation}
+        />
+      }
+      polite={
+        <BNPronunciation
+          bengali={polite.conjugation}
+          pronunciation={polite.pronunciation}
+        />
+      }
     />
   );
 }

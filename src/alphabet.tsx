@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import BNText from "./components/BNText";
 import { Text } from "@mantine/core";
 import Link from "next/link";
+import BNPronunciation from "./components/BNPronunciation";
 
 export interface LetterData {
   pageNumber: number;
@@ -19,11 +20,7 @@ export const vowels: LetterData[][] = [
     {
       pageNumber: 1,
       letter: "অ",
-      fullName: (
-        <>
-          <BNText>স্বর অ</BNText> (shôrô ô)
-        </>
-      ),
+      fullName: <BNPronunciation bengali="স্বর অ" pronunciation="shôrô ô" />,
       vowelMark: "N/A",
       pronunciation: "ɔ",
       pronunciationFile: "/audio/letter/1.mp3",
@@ -42,11 +39,7 @@ export const vowels: LetterData[][] = [
     {
       pageNumber: 2,
       letter: "আ",
-      fullName: (
-        <>
-          <BNText>স্বর আ</BNText> (shôrô a)
-        </>
-      ),
+      fullName: <BNPronunciation bengali="স্বর আ" pronunciation="shôrô a" />,
       vowelMark: "া",
       pronunciation: "a",
       pronunciationFile: "/audio/letter/2.mp3",
@@ -56,9 +49,7 @@ export const vowels: LetterData[][] = [
       pageNumber: 3,
       letter: "ই",
       fullName: (
-        <>
-          <BNText>হ্রস্ব ই</BNText> (rôshshô i)
-        </>
+        <BNPronunciation bengali="হ্রস্ব ই" pronunciation="rôshshô i" />
       ),
       vowelMark: "ি",
       pronunciation: "i",
@@ -87,11 +78,7 @@ export const vowels: LetterData[][] = [
     {
       pageNumber: 4,
       letter: "ঈ",
-      fullName: (
-        <>
-          <BNText>দীর্ঘ ঈ</BNText> (dirghô ī)
-        </>
-      ),
+      fullName: <BNPronunciation bengali="দীর্ঘ ঈ" pronunciation="dirghô ī" />,
       vowelMark: "ী",
       pronunciation: "i",
       pronunciationFile: "/audio/letter/4.mp3",
@@ -120,9 +107,7 @@ export const vowels: LetterData[][] = [
       pageNumber: 5,
       letter: "উ",
       fullName: (
-        <>
-          <BNText>হ্রস্ব উ</BNText> (rôshshô u)
-        </>
+        <BNPronunciation bengali="হ্রস্ব উ" pronunciation="rôshshô u" />
       ),
       vowelMark: "ু",
       pronunciation: "u",
@@ -151,11 +136,7 @@ export const vowels: LetterData[][] = [
     {
       pageNumber: 6,
       letter: "ঊ",
-      fullName: (
-        <>
-          <BNText>দীর্ঘ উ</BNText> (dirghô ū)
-        </>
-      ),
+      fullName: <BNPronunciation bengali="দীর্ঘ উ" pronunciation="dirghô ū" />,
       vowelMark: "ূ",
       pronunciation: "u",
       pronunciationFile: "/audio/letter/6.mp3",
@@ -308,9 +289,7 @@ export const consonants: LetterData[][] = [
       pageNumber: 19,
       letter: "জ",
       fullName: (
-        <>
-          <BNText>বর্গীয় জ</BNText> (bôrgiyô jô)
-        </>
+        <BNPronunciation bengali="বর্গীয় জ" pronunciation="bôrgiyô jô" />
       ),
       pronunciation: "dʒɔ",
       pronunciationFile: "/audio/letter/19.mp3",
@@ -460,9 +439,7 @@ export const consonants: LetterData[][] = [
       pageNumber: 26,
       letter: "ণ",
       fullName: (
-        <>
-          <BNText>মূর্ধন্য ণ</BNText> (murdhônyô nô)
-        </>
+        <BNPronunciation bengali="মূর্ধন্য ণ" pronunciation="murdhônyô nô" />
       ),
       pronunciation: "nɔ",
       pronunciationFile: "/audio/letter/26.mp3",
@@ -577,9 +554,7 @@ export const consonants: LetterData[][] = [
       pageNumber: 31,
       letter: "ন",
       fullName: (
-        <>
-          <BNText>দন্ত্য ন</BNText> (dôntyô nô)
-        </>
+        <BNPronunciation bengali="দন্ত্য ন" pronunciation="dôntyô nô" />
       ),
       pronunciation: "nɔ",
       pronunciationFile: "/audio/letter/31.mp3",
@@ -647,9 +622,7 @@ export const consonants: LetterData[][] = [
       pageNumber: 37,
       letter: "য",
       fullName: (
-        <>
-          <BNText>অন্তঃস্থ য</BNText> (ôntôsthô jô)
-        </>
+        <BNPronunciation bengali="অন্তঃস্থ য" pronunciation="ôntôsthô jô" />
       ),
       pronunciation: "dʒɔ",
       pronunciationFile: "/audio/letter/37.mp3",
@@ -702,9 +675,7 @@ export const consonants: LetterData[][] = [
       pageNumber: 40,
       letter: "শ",
       fullName: (
-        <>
-          <BNText>তালব্য শ</BNText> (talôbyô shô)
-        </>
+        <BNPronunciation bengali="তালব্য শ" pronunciation="talôbyô shô" />
       ),
       pronunciation: "ʃɔ",
       pronunciationFile: "/audio/letter/40.mp3",
@@ -727,9 +698,7 @@ export const consonants: LetterData[][] = [
       pageNumber: 41,
       letter: "ষ",
       fullName: (
-        <>
-          <BNText>মূর্ধন্য ষ</BNText> (murdhônyô shô)
-        </>
+        <BNPronunciation bengali="মূর্ধন্য ষ" pronunciation="murdhônyô shô" />
       ),
       pronunciation: "ʃɔ",
       pronunciationFile: "/audio/letter/41.mp3",
@@ -752,9 +721,7 @@ export const consonants: LetterData[][] = [
       pageNumber: 42,
       letter: "স",
       fullName: (
-        <>
-          <BNText>দন্ত্য স</BNText> (dôntyô sô)
-        </>
+        <BNPronunciation bengali="দন্ত্য স" pronunciation="dôntyô sô" />
       ),
       pronunciation: "ʃɔ or sɔ (Sanskrit origin or English loanword)",
       pronunciationFile: "/audio/letter/42.mp3",

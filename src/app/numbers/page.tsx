@@ -1,4 +1,4 @@
-import BNText from "@/components/BNText";
+import BNPronunciation from "@/components/BNPronunciation";
 import TranslationTable from "@/components/table/TranslationTable";
 import { Group, Stack, Text, Title } from "@mantine/core";
 import { Metadata } from "next";
@@ -17,82 +17,44 @@ export default function Page() {
             {
               english: "0",
               bengali: (
-                <>
-                  <BNText>০</BNText> - <BNText>শূন্য</BNText> (shunno)
-                </>
+                <BNPronunciation bengali="শূন্য" pronunciation="shunno" />
               ),
             },
             {
               english: "1",
-              bengali: (
-                <>
-                  <BNText>১</BNText> - <BNText>এক</BNText> (ek)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="এক" pronunciation="ek" />,
             },
             {
               english: "2",
-              bengali: (
-                <>
-                  <BNText>২</BNText> - <BNText>দুই</BNText> (dui)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="দুই" pronunciation="dui" />,
             },
             {
               english: "3",
-              bengali: (
-                <>
-                  <BNText>৩</BNText> - <BNText>তিন</BNText> (tin)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="তিন" pronunciation="tin" />,
             },
             {
               english: "4",
-              bengali: (
-                <>
-                  <BNText>৪</BNText> - <BNText>চার</BNText> (char)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="চার" pronunciation="char" />,
             },
             {
               english: "5",
-              bengali: (
-                <>
-                  <BNText>৫</BNText> - <BNText>পাঁচ</BNText> (pach)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="পাঁচ" pronunciation="pach" />,
             },
             {
               english: "6",
-              bengali: (
-                <>
-                  <BNText>৬</BNText> - <BNText>ছয়</BNText> (chhoy)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="ছয়" pronunciation="chhoy" />,
             },
             {
               english: "7",
-              bengali: (
-                <>
-                  <BNText>৭</BNText> - <BNText>সাত</BNText> (shat)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="সাত" pronunciation="shat" />,
             },
             {
               english: "8",
-              bengali: (
-                <>
-                  <BNText>৮</BNText> - <BNText>আট</BNText> (at)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="আট" pronunciation="at" />,
             },
             {
               english: "9",
-              bengali: (
-                <>
-                  <BNText>৯</BNText> - <BNText>নয়</BNText> (noy)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="নয়" pronunciation="noy" />,
             },
           ]}
         />
@@ -100,82 +62,50 @@ export default function Page() {
           translations={[
             {
               english: "10",
-              bengali: (
-                <>
-                  <BNText>১০</BNText> - <BNText>দশ</BNText> (dosh)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="দশ" pronunciation="dosh" />,
             },
             {
               english: "11",
               bengali: (
-                <>
-                  <BNText>১১</BNText> - <BNText>এগারো</BNText> (egaro)
-                </>
+                <BNPronunciation bengali="এগারো" pronunciation="egaro" />
               ),
             },
             {
               english: "12",
-              bengali: (
-                <>
-                  <BNText>১২</BNText> - <BNText>বারো</BNText> (baro)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="বারো" pronunciation="baro" />,
             },
             {
               english: "13",
-              bengali: (
-                <>
-                  <BNText>১৩</BNText> - <BNText>তেরো</BNText> (tero)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="তেরো" pronunciation="tero" />,
             },
             {
               english: "14",
               bengali: (
-                <>
-                  <BNText>১৪</BNText> - <BNText>চোদ্দ</BNText> (choddo)
-                </>
+                <BNPronunciation bengali="চোদ্দ" pronunciation="choddo" />
               ),
             },
             {
               english: "15",
-              bengali: (
-                <>
-                  <BNText>১৫</BNText> - <BNText>পনর</BNText> (ponro)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="পনর" pronunciation="ponro" />,
             },
             {
               english: "16",
               bengali: (
-                <>
-                  <BNText>১৬</BNText> - <BNText>ষুল্ল</BNText> (shullo)
-                </>
+                <BNPronunciation bengali="ষুল্ল" pronunciation="shullo" />
               ),
             },
             {
               english: "17",
-              bengali: (
-                <>
-                  <BNText>১৭</BNText> - <BNText>সতর</BNText> (shotro)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="সতর" pronunciation="shotro" />,
             },
             {
               english: "18",
-              bengali: (
-                <>
-                  <BNText>১৮</BNText> - <BNText>অতরও</BNText> (ataro)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="অতরও" pronunciation="ataro" />,
             },
             {
               english: "19",
               bengali: (
-                <>
-                  <BNText>১৯</BNText> - <BNText>উনিশ্</BNText> (unish)
-                </>
+                <BNPronunciation bengali="উনিশ্" pronunciation="unish" />
               ),
             },
           ]}
@@ -184,66 +114,44 @@ export default function Page() {
           translations={[
             {
               english: "20",
-              bengali: (
-                <>
-                  <BNText>২০</BNText> - <BNText>বিশ</BNText> (bish)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="বিশ" pronunciation="bish" />,
             },
             {
               english: "30",
               bengali: (
-                <>
-                  <BNText>৩০</BNText> - <BNText>তিরিশ</BNText> (tirish)
-                </>
+                <BNPronunciation bengali="তিরিশ" pronunciation="tirish" />
               ),
             },
             {
               english: "40",
               bengali: (
-                <>
-                  <BNText>৪০</BNText> - <BNText>চল্লিশ</BNText> (chollish)
-                </>
+                <BNPronunciation bengali="চল্লিশ" pronunciation="chollish" />
               ),
             },
             {
               english: "50",
               bengali: (
-                <>
-                  <BNText>৫০</BNText> - <BNText>পঞ্চাশ</BNText> (ponchash)
-                </>
+                <BNPronunciation bengali="পঞ্চাশ" pronunciation="ponchash" />
               ),
             },
             {
               english: "60",
-              bengali: (
-                <>
-                  <BNText>৬০</BNText> - <BNText>ষাট</BNText> (shat)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="ষাট" pronunciation="shat" />,
             },
             {
               english: "70",
               bengali: (
-                <>
-                  <BNText>৭০</BNText> - <BNText>সত্তর</BNText> (shottor)
-                </>
+                <BNPronunciation bengali="সত্তর" pronunciation="shottor" />
               ),
             },
             {
               english: "80",
-              bengali: (
-                <>
-                  <BNText>৮০</BNText> - <BNText>আশি</BNText> (ashi)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="আশি" pronunciation="ashi" />,
             },
             {
               english: "90",
               bengali: (
-                <>
-                  <BNText>৯০</BNText> - <BNText>নব্বই</BNText> (nobboi)
-                </>
+                <BNPronunciation bengali="নব্বই" pronunciation="nobboi" />
               ),
             },
           ]}
@@ -252,26 +160,18 @@ export default function Page() {
           translations={[
             {
               english: "100",
-              bengali: (
-                <>
-                  <BNText>১০০</BNText> - <BNText>একশ</BNText> (eksho)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="একশ" pronunciation="eksho" />,
             },
             {
               english: "1000",
               bengali: (
-                <>
-                  <BNText>১০০০</BNText> - <BNText>এক হাজার</BNText> (ek hajar)
-                </>
+                <BNPronunciation bengali="এক হাজার" pronunciation="ek hajar" />
               ),
             },
             {
               english: "100,000",
               bengali: (
-                <>
-                  <BNText>১,০০,০০০</BNText> - <BNText>এক লাখ</BNText> (ek lakh)
-                </>
+                <BNPronunciation bengali="এক লাখ" pronunciation="ek lakh" />
               ),
             },
           ]}

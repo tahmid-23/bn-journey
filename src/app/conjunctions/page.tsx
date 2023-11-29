@@ -1,4 +1,5 @@
 import BNText from "@/components/BNText";
+import BNPronunciation from "@/components/BNPronunciation";
 import TranslationTable from "@/components/table/TranslationTable";
 import { Group, Stack, Title } from "@mantine/core";
 import { Metadata } from "next";
@@ -18,34 +19,25 @@ export default function Page() {
               english: "and",
               bengali: (
                 <>
-                  <BNText>আর</BNText> (ar) / <BNText>ও</BNText> (o) /{" "}
-                  <BNText>এবং</BNText> (ebong)
+                  <BNPronunciation bengali="আর" pronunciation="ar" /> /{" "}
+                  <BNPronunciation bengali="ও" pronunciation="o" /> /{" "}
+                  <BNPronunciation bengali="এবং" pronunciation="ebong" />
                 </>
               ),
             },
             {
               english: "or",
-              bengali: (
-                <>
-                  <BNText>অথবা</BNText> (othoba) / <BNText>বা</BNText> (ba)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="বা" pronunciation="ba" />,
             },
             {
               english: "but",
               bengali: (
-                <>
-                  <BNText>কিন্তু</BNText> (kintu)
-                </>
+                <BNPronunciation bengali="কিন্তু" pronunciation="kintu" />
               ),
             },
             {
               english: "so",
-              bengali: (
-                <>
-                  <BNText>তাই</BNText> (tai)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="তাই" pronunciation="tai" />,
             },
           ]}
         />
@@ -63,33 +55,21 @@ export default function Page() {
             {
               english: "wherever",
               bengali: (
-                <>
-                  <BNText>যেখানেই</BNText> (jekhanei)
-                </>
+                <BNPronunciation bengali="যেখানেই" pronunciation="jekhanei" />
               ),
             },
             {
               english: "whenever",
-              bengali: (
-                <>
-                  <BNText>যখন</BNText> (jokhon)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="যখন" pronunciation="jokhon" />,
             },
             {
               english: "although",
-              bengali: (
-                <>
-                  <BNText>যদিও</BNText> (jodio)
-                </>
-              ),
+              bengali: <BNPronunciation bengali="যদিও" pronunciation="jodio" />,
             },
             {
               english: "once",
               bengali: (
-                <>
-                  <BNText>একবার</BNText> (ekbar)
-                </>
+                <BNPronunciation bengali="একবার" pronunciation="ekbar" />
               ),
             },
           ]}
