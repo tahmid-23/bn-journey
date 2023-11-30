@@ -29,8 +29,12 @@ export default function Page() {
               ),
             },
             {
-              english: "when",
+              english: "when (at what time)",
               bengali: <BNPronunciation bengali="কখন" pronunciation="kokhon" />,
+            },
+            {
+              english: "when (on which day)",
+              bengali: <BNPronunciation bengali="কেব" pronunciation="kobe" />,
             },
             {
               english: "why",
