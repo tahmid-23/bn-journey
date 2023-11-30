@@ -100,7 +100,9 @@ export default function Page() {
             },
             {
               english: "18",
-              bengali: <BNPronunciation bengali="অতরও" pronunciation="ataro" />,
+              bengali: (
+                <BNPronunciation bengali="আঠারো" pronunciation="atharo" />
+              ),
             },
             {
               english: "19",
