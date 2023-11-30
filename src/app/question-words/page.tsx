@@ -42,9 +42,7 @@ export default function Page() {
           translations={[
             {
               english: "how",
-              bengali: (
-                <BNPronunciation bengali="কএমওন্" pronunciation="kemon" />
-              ),
+              bengali: <BNPronunciation bengali="কেমন" pronunciation="kemon" />,
             },
             {
               english: "how (in what way)",
