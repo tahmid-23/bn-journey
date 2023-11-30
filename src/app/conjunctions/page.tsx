@@ -1,7 +1,7 @@
 import BNText from "@/components/BNText";
 import BNPronunciation from "@/components/BNPronunciation";
 import TranslationTable from "@/components/table/TranslationTable";
-import { Group, Stack, Title } from "@mantine/core";
+import { Group } from "@mantine/core";
 import { Metadata } from "next";
 import BasicPage from "@/components/BasicPage";
 
@@ -27,7 +27,12 @@ export default function Page() {
             },
             {
               english: "or",
-              bengali: <BNPronunciation bengali="বা" pronunciation="ba" />,
+              bengali: (
+                <>
+                  <BNPronunciation bengali="বা" pronunciation="ba" /> /{" "}
+                  <BNPronunciation bengali="অথবা" pronunciation="othoba" />
+                </>
+              ),
             },
             {
               english: "but",
