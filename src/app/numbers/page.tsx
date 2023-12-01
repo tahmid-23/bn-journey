@@ -1,8 +1,8 @@
-import BNPronunciation from "@/components/BNPronunciation";
 import BasicPage from "@/components/BasicPage";
 import TranslationTable from "@/components/table/TranslationTable";
-import { Group, Stack, Text, Title } from "@mantine/core";
+import { Group, Text } from "@mantine/core";
 import { Metadata } from "next";
+import NumberWithPronunciation from "./NumberWithPronunciation";
 
 export const metadata: Metadata = {
   title: "Numbers - Bengali Journey",
@@ -17,44 +17,102 @@ export default function Page() {
             {
               english: "0",
               bengali: (
-                <BNPronunciation bengali="শূন্য" pronunciation="shunno" />
+                <NumberWithPronunciation
+                  numeralNumber="০"
+                  bnNumber="শূন্য"
+                  pronunciation="shunno"
+                />
               ),
             },
             {
               english: "1",
-              bengali: <BNPronunciation bengali="এক" pronunciation="ek" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="১"
+                  bnNumber="এক"
+                  pronunciation="ek"
+                />
+              ),
             },
             {
               english: "2",
-              bengali: <BNPronunciation bengali="দুই" pronunciation="dui" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="২"
+                  bnNumber="দুই"
+                  pronunciation="dui"
+                />
+              ),
             },
             {
               english: "3",
-              bengali: <BNPronunciation bengali="তিন" pronunciation="tin" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৩"
+                  bnNumber="তিন"
+                  pronunciation="tin"
+                />
+              ),
             },
             {
               english: "4",
-              bengali: <BNPronunciation bengali="চার" pronunciation="char" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৪"
+                  bnNumber="চার"
+                  pronunciation="char"
+                />
+              ),
             },
             {
               english: "5",
-              bengali: <BNPronunciation bengali="পাঁচ" pronunciation="pach" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৫"
+                  bnNumber="পাঁচ"
+                  pronunciation="pach"
+                />
+              ),
             },
             {
               english: "6",
-              bengali: <BNPronunciation bengali="ছয়" pronunciation="chhoy" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৬"
+                  bnNumber="ছয়"
+                  pronunciation="chhoy"
+                />
+              ),
             },
             {
               english: "7",
-              bengali: <BNPronunciation bengali="সাত" pronunciation="shat" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৭"
+                  bnNumber="সাত"
+                  pronunciation="shat"
+                />
+              ),
             },
             {
               english: "8",
-              bengali: <BNPronunciation bengali="আট" pronunciation="at" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৮"
+                  bnNumber="আট"
+                  pronunciation="at"
+                />
+              ),
             },
             {
               english: "9",
-              bengali: <BNPronunciation bengali="নয়" pronunciation="noy" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৯"
+                  bnNumber="নয়"
+                  pronunciation="noy"
+                />
+              ),
             },
           ]}
         />
@@ -62,52 +120,102 @@ export default function Page() {
           translations={[
             {
               english: "10",
-              bengali: <BNPronunciation bengali="দশ" pronunciation="dosh" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="১০"
+                  bnNumber="দশ"
+                  pronunciation="dosh"
+                />
+              ),
             },
             {
               english: "11",
               bengali: (
-                <BNPronunciation bengali="এগারো" pronunciation="egaro" />
+                <NumberWithPronunciation
+                  numeralNumber="১১"
+                  bnNumber="এগারো"
+                  pronunciation="egaro"
+                />
               ),
             },
             {
               english: "12",
-              bengali: <BNPronunciation bengali="বারো" pronunciation="baro" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="১২"
+                  bnNumber="বারো"
+                  pronunciation="baro"
+                />
+              ),
             },
             {
               english: "13",
-              bengali: <BNPronunciation bengali="তেরো" pronunciation="tero" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="১৩"
+                  bnNumber="তেরো"
+                  pronunciation="tero"
+                />
+              ),
             },
             {
               english: "14",
               bengali: (
-                <BNPronunciation bengali="চোদ্দ" pronunciation="choddo" />
+                <NumberWithPronunciation
+                  numeralNumber="১৪"
+                  bnNumber="চোদ্দ"
+                  pronunciation="choddo"
+                />
               ),
             },
             {
               english: "15",
-              bengali: <BNPronunciation bengali="পনর" pronunciation="ponro" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="১৫"
+                  bnNumber="পনর"
+                  pronunciation="ponro"
+                />
+              ),
             },
             {
               english: "16",
               bengali: (
-                <BNPronunciation bengali="ষুল্ল" pronunciation="shullo" />
+                <NumberWithPronunciation
+                  numeralNumber="১৬"
+                  bnNumber="ষুল্ল"
+                  pronunciation="shullo"
+                />
               ),
             },
             {
               english: "17",
-              bengali: <BNPronunciation bengali="সতর" pronunciation="shotro" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="১৭"
+                  bnNumber="সতর"
+                  pronunciation="shotro"
+                />
+              ),
             },
             {
               english: "18",
               bengali: (
-                <BNPronunciation bengali="আঠারো" pronunciation="atharo" />
+                <NumberWithPronunciation
+                  numeralNumber="১৮"
+                  bnNumber="আঠারো"
+                  pronunciation="atharo"
+                />
               ),
             },
             {
               english: "19",
               bengali: (
-                <BNPronunciation bengali="উনিশ্" pronunciation="unish" />
+                <NumberWithPronunciation
+                  numeralNumber="১৯"
+                  bnNumber="উনিশ্"
+                  pronunciation="unish"
+                />
               ),
             },
           ]}
@@ -116,44 +224,82 @@ export default function Page() {
           translations={[
             {
               english: "20",
-              bengali: <BNPronunciation bengali="বিশ" pronunciation="bish" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="২০"
+                  bnNumber="বিশ"
+                  pronunciation="bish"
+                />
+              ),
             },
             {
               english: "30",
               bengali: (
-                <BNPronunciation bengali="তিরিশ" pronunciation="tirish" />
+                <NumberWithPronunciation
+                  numeralNumber="৩০"
+                  bnNumber="তিরিশ"
+                  pronunciation="tirish"
+                />
               ),
             },
             {
               english: "40",
               bengali: (
-                <BNPronunciation bengali="চল্লিশ" pronunciation="chollish" />
+                <NumberWithPronunciation
+                  numeralNumber="৪০"
+                  bnNumber="চল্লিশ"
+                  pronunciation="chollish"
+                />
               ),
             },
             {
               english: "50",
               bengali: (
-                <BNPronunciation bengali="পঞ্চাশ" pronunciation="ponchash" />
+                <NumberWithPronunciation
+                  numeralNumber="৫০"
+                  bnNumber="পঞ্চাশ"
+                  pronunciation="ponchash"
+                />
               ),
             },
             {
               english: "60",
-              bengali: <BNPronunciation bengali="ষাট" pronunciation="shat" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৬০"
+                  bnNumber="ষাট"
+                  pronunciation="shat"
+                />
+              ),
             },
             {
               english: "70",
               bengali: (
-                <BNPronunciation bengali="সত্তর" pronunciation="shottor" />
+                <NumberWithPronunciation
+                  numeralNumber="৭০"
+                  bnNumber="সত্তর"
+                  pronunciation="shottor"
+                />
               ),
             },
             {
               english: "80",
-              bengali: <BNPronunciation bengali="আশি" pronunciation="ashi" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="৮০"
+                  bnNumber="আশি"
+                  pronunciation="ashi"
+                />
+              ),
             },
             {
               english: "90",
               bengali: (
-                <BNPronunciation bengali="নব্বই" pronunciation="nobboi" />
+                <NumberWithPronunciation
+                  numeralNumber="৯০"
+                  bnNumber="নব্বই"
+                  pronunciation="nobboi"
+                />
               ),
             },
           ]}
@@ -162,18 +308,32 @@ export default function Page() {
           translations={[
             {
               english: "100",
-              bengali: <BNPronunciation bengali="একশ" pronunciation="eksho" />,
+              bengali: (
+                <NumberWithPronunciation
+                  numeralNumber="১০০"
+                  bnNumber="একশ"
+                  pronunciation="eksho"
+                />
+              ),
             },
             {
               english: "1000",
               bengali: (
-                <BNPronunciation bengali="এক হাজার" pronunciation="ek hajar" />
+                <NumberWithPronunciation
+                  numeralNumber="১০০০"
+                  bnNumber="এক হাজার"
+                  pronunciation="ek hajar"
+                />
               ),
             },
             {
               english: "100,000",
               bengali: (
-                <BNPronunciation bengali="এক লাখ" pronunciation="ek lakh" />
+                <NumberWithPronunciation
+                  numeralNumber="১,০০,০০০"
+                  bnNumber="এক লাখ"
+                  pronunciation="ek lakh"
+                />
               ),
             },
           ]}
