@@ -631,7 +631,7 @@ export const consonants: LetterData[][] = [
         <>
           <Text>
             This letter sounds the same as{" "}
-            <Link href="/alphabet/letter/37">
+            <Link href="/alphabet/letter/19">
               <BNText>জ</BNText>
             </Link>
             .
